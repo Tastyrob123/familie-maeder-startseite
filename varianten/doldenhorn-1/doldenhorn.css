@@ -1,0 +1,264 @@
+/* Waldhotel Doldenhorn · 20 Fassungen der Station (17.10.2026). Bewusst ohne die abgerundeten Schwebe-Kacheln des Rivage:
+   gerade Kanten, Fugen, der Doppelrahmen des Hauses, Bänder, Bögen. Bewegung nur transform, alles ist sofort sichtbar. */
+body{background:var(--papier)}
+.dv{display:none;position:relative;isolation:isolate;background-color:var(--papier);color:var(--tinte);padding-bottom:0}
+.dv.an{display:block}
+.dv *{min-width:0}
+.dv{overflow-x:clip}
+.dv::before{content:'';position:absolute;inset:0;z-index:-1;background-size:420px auto;pointer-events:none}
+.dv-dunkel{background-color:var(--hk);color:#fff}
+.dv0{height:100vh}
+.dv0 iframe{display:block;width:100%;height:100%;border:0}
+.dv__vorher{height:110px;background:#0b131f url(../../assets/img/f-kandersteg-s.webp?v=30) center 70%/cover;position:relative}
+.dv__vorher::after{content:'Fenster «Weiter nach Kandersteg»';position:absolute;left:var(--rand);bottom:12px;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.8)}
+.dv__nachher{height:110px;margin-top:var(--abschnitt);background:var(--papier) linear-gradient(var(--papier) 50%,#321f10 50%);position:relative}
+.dv__nachher::after{content:'gleich gegenüber · Landgasthof Ruedihus';position:absolute;left:var(--rand);bottom:14px;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+.dv .in{padding-inline:var(--rand)}
+.dv>.in:first-of-type,.dv>.dv__vorher+*{margin-top:clamp(70px,8vw,120px)}
+
+/* Bausteine */
+.dzw{display:block;color:var(--taupe);margin-bottom:18px}
+.dv-dunkel .dzw{color:var(--hg)}
+.dz{display:block;height:58px;width:auto}
+.dt{font-family:var(--serif);font-weight:700;font-size:clamp(2.3rem,4.4vw,4.4rem);line-height:1.08;letter-spacing:-.008em}
+.dt em{font-style:normal;color:var(--taupe)}
+.dv-dunkel .dt em,.dt--gold em{color:var(--hg)}
+.dt--klein{font-size:clamp(1.8rem,2.8vw,2.8rem)}
+.dl{margin-top:14px;font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--taupe)}
+.dv-dunkel .dl{color:var(--hg)}
+.dq{margin:0}
+.dq p{font-family:var(--serif);font-weight:700;font-size:clamp(1.25rem,1.9vw,1.9rem);line-height:1.3;text-wrap:balance}
+.dq cite{display:block;margin-top:12px;font-style:normal;font-family:var(--mono);font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--taupe)}
+.dv-dunkel .dq cite{color:var(--hg)}
+.dq--mitte{max-width:34ch;margin:26px auto 0;text-align:center}
+.dp{margin-top:22px;font-size:clamp(1rem,1.12vw,1.12rem);line-height:1.66;max-width:56ch}
+.dv .dw{margin:24px 0 24px}
+.dv-mitte{display:flex;flex-direction:column;align-items:center;text-align:center}
+.dv-mitte .dzw{margin-inline:auto}
+.dv-unten{display:grid;grid-template-columns:1.2fr 1.1fr auto;gap:clamp(24px,4vw,60px);align-items:center;margin-top:clamp(40px,4.6vw,70px)}
+.dv-unten .dp,.dv-unten .dw{margin:0}
+.df{margin:0;position:relative}
+.df__b{display:block;overflow:hidden;height:100%}
+.df img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1.08);transition:transform 2.2s cubic-bezier(.22,1,.36,1)}
+.df.da img{transform:none}
+.df figcaption{margin-top:10px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--taupe)}
+.df figcaption b{font-family:var(--serif);font-size:1.15rem;letter-spacing:0;text-transform:none;color:var(--tinte);font-weight:700}
+.dv-dunkel .df figcaption{color:var(--hg)}
+html.js .dv [data-e]{transform:translate3d(0,34px,0);transition:transform 1.4s cubic-bezier(.22,1,.36,1)}
+html.js .dv [data-e].da{transform:none}
+.ds{display:flex;flex-wrap:wrap;gap:0;border-top:1px solid rgba(138,112,54,.35)}
+.ds a{flex:1 1 0;min-width:150px;display:grid;grid-template-columns:1fr auto;gap:2px 10px;padding:14px 16px 14px 0;border-bottom:1px solid rgba(138,112,54,.35)}
+.ds b{font-family:var(--serif);font-size:1.15rem}
+.ds small{grid-column:1;font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--taupe)}
+.ds i{grid-row:1 / 3;grid-column:2;align-self:center;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;box-shadow:inset 0 0 0 1px rgba(138,112,54,.5)}
+.ds svg{width:11px;height:11px;stroke:currentColor;fill:none;stroke-width:1.4}
+.ds--band{margin-top:clamp(30px,4vw,56px)}
+
+/* Umschalter */
+.wahl-v{position:fixed;z-index:90;right:14px;top:50%;translate:0 -50%;display:flex;flex-direction:column;align-items:center;gap:8px;padding:7px;border-radius:999px;background:linear-gradient(180deg,#1d2a3c,#0e1724);color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 18px 40px -16px rgba(0,0,0,.7)}
+.wahl-v button{flex:none;width:38px;height:38px;border-radius:50%;background:#fbf5e6;color:var(--tinte);font-size:20px;line-height:1;display:grid;place-items:center;rotate:90deg}
+.wahl-v__n{font-family:var(--mono);font-size:11px;text-align:center;line-height:1.2}
+.wahl-v__n b{display:block;font-weight:500;color:var(--gold);font-size:17px}
+.wahl-v__t{position:absolute;right:calc(100% + 10px);top:50%;translate:0 -50%;white-space:nowrap;padding:8px 14px;border-radius:999px;background:#0e1724;box-shadow:0 10px 24px -12px rgba(0,0,0,.7);opacity:0;transition:opacity .5s}
+.wahl-v.zeig .wahl-v__t,.wahl-v:hover .wahl-v__t{opacity:1}
+.wahl-v__t b{font-family:var(--serif);font-size:.95rem}
+.wahl-v__t small{display:none}
+
+/* 1 Waldrand-Band */
+.dv1__k{display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:end;padding-bottom:28px;border-bottom:1px solid rgba(138,112,54,.35);margin-bottom:28px}
+.dv1__band{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr 1.25fr;gap:3px;height:clamp(300px,40vw,580px)}
+.dv1__band .df{display:flex;flex-direction:column;height:100%}
+.dv1__band .df__b{flex:1}
+.dv1__band figcaption{padding-left:12px}
+.dv1__u{display:grid;grid-template-columns:1.2fr 1.1fr auto;gap:4vw;align-items:center;margin-top:40px}
+.dv1__u .dp,.dv1__u .dw{margin:0}
+
+/* 2 Doppelrahmen */
+.dr .df__b{padding:8px;background:#fbf8f1;border-radius:30px;box-shadow:0 0 0 1px rgba(138,112,54,.32),0 26px 46px -32px rgba(40,30,12,.45)}
+.dr img{border-radius:23px}
+.dv2__g{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(30px,5vw,80px);align-items:center}
+.dv2__gross .df__b{aspect-ratio:4/3.2}
+.dv2__r{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.4vw,34px);margin-top:clamp(50px,6vw,90px)}
+.dv2__k .df__b{aspect-ratio:4/3}
+.dv2__k figcaption{display:flex;flex-direction:column;gap:2px;text-align:center}
+
+/* 3 Sommer und Winter */
+.dv3__g{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,48px);margin-top:clamp(40px,5vw,70px)}
+.dv3__n{font-family:var(--serif);font-weight:700;font-size:clamp(1.6rem,2.6vw,2.6rem);margin-bottom:16px}
+.dv3__s:last-child .dv3__n{text-align:right}
+.dv3__gross .df__b{aspect-ratio:16/10}
+.dv3__k{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.dv3__k .df__b{aspect-ratio:4/3}
+.dv3 .df__b{border-radius:6px}
+
+/* 4 Text steht, Bilder ziehen */
+.dv4__g{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,5vw,90px);align-items:start}
+.dv4__t{position:sticky;top:110px}
+.dv4__b{display:flex;flex-direction:column;gap:clamp(30px,4vw,60px)}
+.dv4__b .df__b{aspect-ratio:3/2}
+.dv4__2,.dv4__4{width:78%;align-self:flex-end}
+.dv4__2 .df__b,.dv4__4 .df__b{aspect-ratio:4/3}
+
+/* 5 Kontaktbogen */
+.dv5{padding-bottom:0}
+.dv5__g{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);gap:clamp(30px,4vw,70px);align-items:center}
+.dv5__b{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:rgba(227,210,166,.55);padding:1px}
+.dv5__b .df{background:var(--hk);padding:6px 6px 0}
+.dv5__b .df__b{aspect-ratio:1}
+.dv5__b figcaption{margin:6px 0 8px;font-size:9.5px}
+.dv5 .dp{color:rgba(255,255,255,.86)}
+
+/* 6 Ein Tag im Haus */
+.dv6__k{display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:end;margin-bottom:36px}
+.dv6__r{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;padding-inline:0}
+.dv6__r .df__b{height:clamp(360px,62vh,640px)}
+.dv6__r figcaption{padding-left:14px}
+
+/* 7 Waldrand. */
+.dv7__w{margin:clamp(40px,5vw,80px) 0 0;text-align:center;font-family:var(--serif);font-weight:700;font-size:min(16.5vw,14rem);line-height:.9;letter-spacing:-.03em;background-color:#55704a;background-size:cover;background-position:center;-webkit-background-clip:text;background-clip:text;color:transparent}
+.dv7__g{display:grid;grid-template-columns:1fr 1.3fr 1fr;gap:clamp(24px,4vw,60px);margin-top:clamp(30px,4vw,56px);align-items:start}
+.dv7__g .dw{margin-top:0}
+.dv7__r{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:clamp(40px,5vw,70px)}
+.dv7__r .df__b{aspect-ratio:4/3}
+
+/* 8 Das Hausbuch */
+.dv8__buch{display:grid;grid-template-columns:1fr 1fr;max-width:1240px;margin:clamp(70px,8vw,120px) auto 0;background:#fbf8f1;border-radius:6px 6px 6px 6px;box-shadow:0 2px 0 #e6dcc6,0 4px 0 #f6efe1,0 6px 0 #e3d8c0,0 40px 70px -40px rgba(40,30,12,.6);overflow:hidden}
+.dv8__l{padding:clamp(34px,4vw,64px);background:linear-gradient(90deg,#fbf8f1 86%,#efe6d3)}
+.dv8__r{position:relative;min-height:100%}
+.dv8__r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.dv8__r::before{content:'';position:absolute;z-index:1;left:0;top:0;bottom:0;width:40px;background:linear-gradient(90deg,rgba(40,30,12,.35),rgba(40,30,12,0))}
+.dv8 .ds{max-width:1240px;margin-inline:auto}
+
+/* 9 Treppe */
+.dv9__g{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,46px);align-items:start}
+.dv9__s{display:flex;flex-direction:column;gap:clamp(20px,2.4vw,34px)}
+.dv9__s--2{margin-top:clamp(80px,10vw,160px)}
+.dv9__s--3{margin-top:clamp(160px,20vw,320px)}
+.dv9__h .df__b{aspect-ratio:4/5}
+.dv9__q .df__b{aspect-ratio:4/3}
+.dv9 .dp,.dv9 .dw{margin:0}
+
+/* 10 Triptychon */
+.dv10__r{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--gold);margin-top:clamp(40px,5vw,70px);padding:2px 0}
+.dv10__r .df{background:var(--papier)}
+.dv10__r .df__b{height:clamp(380px,64vh,680px)}
+.dv10__r figcaption{padding:10px 14px 4px}
+
+/* 11 Die Quelle */
+.dv11__g{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(30px,5vw,80px);align-items:center}
+.dv11__b{position:relative;height:clamp(620px,62vw,900px)}
+.dv11__lauf{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.dv11__lauf path{fill:none;stroke:#7d98ad;stroke-width:2;vector-effect:non-scaling-stroke;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 3s cubic-bezier(.45,0,.2,1) .4s}
+.dv11.da .dv11__lauf path{stroke-dashoffset:0}
+.dv11__b .df{position:absolute;z-index:1}
+.dv11__1{left:0;top:0;width:44%}.dv11__1 .df__b{aspect-ratio:4/3}
+.dv11__2{right:0;top:24%;width:40%}.dv11__2 .df__b{aspect-ratio:3/4}
+.dv11__3{left:8%;bottom:0;width:62%}.dv11__3 .df__b{aspect-ratio:16/10}
+.dv11__3 figcaption{text-transform:none;letter-spacing:0;font-family:var(--serif);font-size:1rem;color:var(--tinte)}
+
+/* 12 Die Küche */
+.dv12__g{display:grid;grid-template-columns:1.25fr 1fr .8fr;gap:16px;margin-top:clamp(30px,4vw,56px);align-items:stretch}
+.dv12__a .df__b{height:100%;min-height:520px}
+.dv12__karte{display:flex;flex-direction:column;align-items:center;text-align:center;padding:clamp(28px,3vw,44px);background:#fbf8f1;border:1px solid rgba(138,112,54,.4);outline:1px solid rgba(138,112,54,.4);outline-offset:-9px}
+.dv12__titel{font-family:var(--serif);font-weight:700;font-size:1.5rem}
+.dv12__l{display:block;width:60px;height:1px;background:var(--taupe);margin:18px 0}
+.dv12__z{display:flex;flex-direction:column;margin:6px 0}
+.dv12__z span{font-family:var(--mono);font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--taupe)}
+.dv12__z b{font-family:var(--serif);font-size:1.25rem}
+.dv12__q{font-family:var(--serif);font-weight:700;font-size:1.05rem;line-height:1.4}
+.dv12__karte small{margin-top:8px;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--taupe)}
+.dv12__karte .kn-reihe{margin-top:22px;justify-content:center}
+.dv12__r{display:grid;grid-template-rows:1fr 1fr;gap:16px}
+
+/* 13 Bogenfenster */
+.dv13__r{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(22px,2.6vw,36px);margin-top:clamp(40px,5vw,70px)}
+.dv13__r .df__b{aspect-ratio:3/4.4;border-radius:999px 999px 6px 6px;box-shadow:0 0 0 6px var(--papier),0 0 0 7px rgba(138,112,54,.45)}
+.dv13__r figcaption{text-align:center;margin-top:16px}
+
+/* 14 Halb und halb */
+.dv14__g{display:grid;grid-template-columns:1fr 1fr;margin-top:0}
+.dv14__b{position:relative;min-height:100%}
+.dv14__b img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.dv14__t{padding:clamp(60px,7vw,110px) var(--rand);background:var(--hk) url() ;color:#fff}
+.dv14__t .dzw,.dv14__t .dt em,.dv14__t .dl,.dv14__t .dq cite{color:var(--hg)}
+.dv14__q{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:26px}
+.dv14__q .df__b{aspect-ratio:1}
+.dv14 .dv__vorher+*{margin-top:0}
+.dv14 .kn--linie{--o:#fffdf7;--m:#f6eedd;--u:#e0d2b6;--t:var(--tinte)}
+
+/* 15 Filmstreifen */
+.dv15__band{overflow:hidden;margin-top:clamp(40px,5vw,70px)}
+.dv15__zug{display:flex;gap:8px;width:max-content;animation:dvZug 90s linear infinite}
+.dv15__zug .df{width:clamp(220px,22vw,340px);transform:none!important}
+.dv15__zug .df__b{aspect-ratio:4/5}
+.dv15__zug .df img{transform:none}
+@keyframes dvZug{to{transform:translate3d(-50%,0,0)}}
+
+/* 16 Drei Reiter */
+.dv16__g{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(30px,5vw,80px);align-items:center}
+.dv16__tabs{display:flex;border-bottom:1px solid rgba(138,112,54,.4)}
+.dv16__tabs button{position:relative;padding:12px 22px 14px 0;font-family:var(--serif);font-weight:700;font-size:1.3rem;opacity:.5;transition:opacity .4s}
+.dv16__tabs button.an{opacity:1}
+.dv16__tabs button::after{content:'';position:absolute;left:0;right:22px;bottom:-1px;height:2px;background:var(--taupe);transform:scaleX(0);transform-origin:0 50%;transition:transform .6s var(--e1)}
+.dv16__tabs button.an::after{transform:none}
+.dv16__buehne{position:relative;margin-top:18px;aspect-ratio:4/3.3}
+.dv16__p{position:absolute;inset:0;opacity:0;transition:opacity .7s ease;pointer-events:none}
+.dv16__p.an{opacity:1;pointer-events:auto}
+.dv16__p img{width:100%;height:calc(100% - 120px);object-fit:cover}
+.dv16__x{padding-top:16px}
+.dv16__x b{font-family:var(--serif);font-size:1.4rem}
+.dv16__x p{margin:6px 0 10px;max-width:60ch;line-height:1.55}
+.dv16__p:not(.an) .dv16__x{visibility:hidden}
+.dv16 .tl{color:var(--tinte);box-shadow:inset 0 -1px 0 rgba(15,22,32,.4)}
+
+/* 17 Eckdaten gross */
+.dv17__k{display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:end;margin-bottom:clamp(40px,5vw,70px)}
+.dv17__r{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.6vw,40px);border-top:3px double rgba(138,112,54,.6);padding-top:26px}
+.dv17__z{font-family:var(--serif);font-weight:700;font-size:clamp(4rem,9vw,8.6rem);line-height:1}
+.dv17__u{margin:14px 0 20px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--taupe);min-height:2.6em}
+.dv17__s .df__b{aspect-ratio:4/3}
+
+/* 18 Annäherung */
+.dv18__k{display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:end;margin-bottom:clamp(40px,5vw,70px)}
+.dv18__r{display:grid;grid-template-columns:.7fr .85fr 1fr 1.3fr;gap:clamp(14px,1.8vw,26px);align-items:end}
+.dv18__r .df__b{aspect-ratio:3/4}
+
+/* 19 Ein Bild, ganz ruhig */
+.dv19__b{height:clamp(480px,86vh,900px);position:relative}
+.dv19__b img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.dv19 .dv__vorher+*{margin-top:0}
+.dv19__g{display:grid;grid-template-columns:1fr 1.25fr 1fr;gap:clamp(24px,4vw,60px);margin-top:clamp(50px,6vw,90px);align-items:start}
+.dv19__g .dw{margin-top:0}
+
+/* 20 Goldene Fugen */
+.dv20__g{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(3,clamp(160px,15vw,250px));gap:2px;background:var(--gold);padding:2px;grid-template-areas:"n n h h" "a b h h" "c d e f"}
+.dv20__g .df{background:var(--papier)}
+.dv20__name{grid-area:n;background:var(--hk);color:#fff;display:flex;flex-direction:column;justify-content:center;padding:clamp(20px,3vw,44px)}
+.dv20__name .dz{color:var(--hg);height:44px;margin-bottom:14px}
+.dv20__name .dt{font-size:clamp(1.8rem,3vw,3rem)}
+.dv20__name .dl{color:var(--hg)}
+.dv20__haus{grid-area:h}.dv20__a{grid-area:a}.dv20__b{grid-area:b}.dv20__c{grid-area:c}.dv20__d{grid-area:d}.dv20__e{grid-area:e}.dv20__f{grid-area:f}
+.dv20__u{display:grid;grid-template-columns:1fr 1.2fr;gap:5vw;margin-top:clamp(40px,5vw,70px);align-items:start}
+.dv20__u .dp{margin-top:0}
+
+@media (max-width:1200px){
+  .dv-unten,.dv1__u{grid-template-columns:1fr 1fr}
+  .dv-unten>.kn-reihe,.dv1__u>.kn-reihe{grid-column:1 / -1}
+  .dv .dw div{min-width:auto}
+  .dv .dw{grid-template-columns:repeat(auto-fit,minmax(118px,1fr))}
+  .dv7__g,.dv19__g{grid-template-columns:1fr 1fr}
+  .dv7__g>:last-child,.dv19__g>:last-child{grid-column:1 / -1}
+  .dv19 .dt{font-size:clamp(2rem,3.6vw,3.4rem)}
+}
+@media (max-width:900px){
+  .dv1__k,.dv1__u,.dv2__g,.dv3__g,.dv4__g,.dv5__g,.dv6__k,.dv7__g,.dv9__g,.dv11__g,.dv12__g,.dv14__g,.dv16__g,.dv17__k,.dv17__r,.dv18__k,.dv19__g,.dv20__u,.dv-unten,.dv8__buch{grid-template-columns:1fr}
+  .dv1__band,.dv6__r,.dv10__r,.dv13__r,.dv18__r,.dv2__r,.dv7__r{grid-template-columns:1fr 1fr;height:auto}
+  .dv1__band .df__b,.dv6__r .df__b,.dv10__r .df__b{height:auto;aspect-ratio:3/4}
+  .dv4__t{position:static}.dv9__s--2,.dv9__s--3{margin-top:0}
+  .dv11__b{height:auto;display:grid;gap:14px}.dv11__b .df{position:static;width:auto}.dv11__lauf{display:none}
+  .dv5__b{grid-template-columns:repeat(3,1fr)}
+  .dv20__g{grid-template-columns:1fr 1fr;grid-template-rows:auto;grid-template-areas:"n n" "h h" "a b" "c d" "e f"}
+  .dv20__g .df__b{aspect-ratio:4/3}
+  .dv8__r{min-height:320px}.dv14__b{min-height:60vh}
+  .wahl-v__t{display:none}
+}

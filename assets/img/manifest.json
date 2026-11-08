@@ -1,0 +1,2387 @@
+{
+ "auf-carlton": {
+  "f": {
+   "l": [
+    "auf-carlton-l.webp",
+    2528,
+    1422
+   ],
+   "s": [
+    "auf-carlton-s.webp",
+    1400,
+    788
+   ],
+   "h": [
+    "auf-carlton-h.webp",
+    900,
+    1520
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAACwAwCdASocABAAPv1qrE6rJiQiMAgBYB+JQBOmUAA2SjcamFjOAAD7IhuOlIucAusewCFjVyJsfM4Lz2ocECosX9ig2Y4N3Qy3j5QRuZDmDJXggRdw4/Vk0JingAAA",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "hero-f-l",
+  "quelle": "",
+  "rechte": ""
+ },
+ "auf-doldenhorn": {
+  "f": {
+   "l": [
+    "auf-doldenhorn-l.webp",
+    2560,
+    1297
+   ],
+   "s": [
+    "auf-doldenhorn-s.webp",
+    1400,
+    709
+   ],
+   "h": [
+    "auf-doldenhorn-h.webp",
+    768,
+    1297
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAwCdASocAA4ALsF+v1+jqysrCwDASzgF8kIc8uv2Q0kKJzQEAAD+5Ga3+7dBpjbOOIUo2raTfSrLqjFlMaQNJTxy0GksCOXoJ760AAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "auftakt",
+  "quelle": "website/mediathek/225766_DJI_0530-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "auf-ruedihus": {
+  "f": {
+   "l": [
+    "auf-ruedihus-l.webp",
+    2560,
+    1440
+   ],
+   "s": [
+    "auf-ruedihus-s.webp",
+    1400,
+    788
+   ],
+   "h": [
+    "auf-ruedihus-h.webp",
+    900,
+    1519
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAABQAwCdASocABAAPv1orE6rJiQiMAgBYB+JZQAAXugXn0qXAAD+3NVgJSJFhljXpzk6wLygUG1zVjtJyBTJfVTyx5Uw764QUFldgN5QKmR/O1kKYigAAA==",
+  "haus": "Landgasthof Ruedihus",
+  "bild": "haus-sommer",
+  "quelle": "ruedihus/extern/myswitzerland/myswitzerland-00035543_m.jpg",
+  "rechte": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert"
+ },
+ "auf-gasterntal": {
+  "f": {
+   "l": [
+    "auf-gasterntal-l.webp",
+    2560,
+    1440
+   ],
+   "s": [
+    "auf-gasterntal-s.webp",
+    1400,
+    788
+   ],
+   "h": [
+    "auf-gasterntal-h.webp",
+    900,
+    1520
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAABQBACdASocABAAPv1usE6rJyUiMAgBYB+JZABUfpcJROkJdvtBZ/5XtO9wAP7ZXhYsIiXnTr6Ht7IwLoamuxoW+eecPV/+3RMk4oQf/qg9nZnrxzmtrEkf5lWwIso5SNlq//rEUIAAAA==",
+  "haus": "Berghotel Gasterntal",
+  "bild": "haus-profil",
+  "quelle": "website/bilder/IMG_3912.jpg",
+  "rechte": "Website des Hauses"
+ },
+ "f-carlton": {
+  "f": {
+   "l": [
+    "f-carlton-l.webp",
+    2560,
+    1600
+   ],
+   "s": [
+    "f-carlton-s.webp",
+    1300,
+    812
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAABQBQCdASocABIAPvlork6qpiSiMBgMAVAfCWMAuzMzAXAPEtnD3PLuR0Su8rtTq2TSJwAA7ShHKbj3eYl1JPbDb4KMJ2UMtAQzkEnl2hjptStS72ehK93GIP7O/M3YH5VzgTJCwUMRuYimCJPAsBmzAAA=",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "fenster-blick",
+  "quelle": "",
+  "rechte": ""
+ },
+ "f-doldenhorn": {
+  "f": {
+   "l": [
+    "f-doldenhorn-l.webp",
+    2560,
+    1707
+   ],
+   "s": [
+    "f-doldenhorn-s.webp",
+    1300,
+    867
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAACQBACdASocABMAPuVmp06pJiOiN/qoASAciWUAyrQSgl191eL71bOlDf4xegAA/qCNXBiMWzdZX4nawJKCzrSdfh9iqx+xzhXeuOEmK7vY+qqev1r4E6hRuSDWkAAA",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "fenster-tal",
+  "quelle": "Website des Hauses, Mediathek (Tal bei Kandersteg)",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "f-ruedihus": {
+  "f": {
+   "l": [
+    "f-ruedihus-l.webp",
+    2560,
+    1920
+   ],
+   "s": [
+    "f-ruedihus-s.webp",
+    1300,
+    975
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAwCdASocABUAPv1urFArJiQisBgIAWAfiWMAwNwPRtkgeB3iaFZQAP7kQNhZg/cwNyj/TAtzaX+536I5bLAzprXR6MVIgvTp/VD6qPJGPC8ntq7OD7uLYjg0gktnWzh7WOUU3KCO2/dmHjzAAA==",
+  "haus": "Landgasthof Ruedihus",
+  "bild": "butzen",
+  "quelle": "ruedihus/extern/wikipedia-commons/Ruedihus 02.jpg",
+  "rechte": "Wikimedia Commons, Pingufan13, CC BY-SA 3.0"
+ },
+ "f-gasterntal": {
+  "f": {
+   "l": [
+    "f-gasterntal-l.webp",
+    2560,
+    1920
+   ],
+   "s": [
+    "f-gasterntal-s.webp",
+    1300,
+    975
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADwBACdASocABUAPv1gr08rJSSiMBgMAWAfiWUAxNgMzXNUoQd/h3JBID4D7ioZ02AA/ldM8wZ5ygJ+XmEbr3JnWtk73Cx259ik1aOpU5Nl7VRwAp7LJwyIWvODTZi6K3XA8Ytz8PHiFoD7kFTaoAAA",
+  "haus": "Berghotel Gasterntal",
+  "bild": "t-strasse",
+  "quelle": "extern/wikipedia-commons/Gasterntal Regenwetter.JPG",
+  "rechte": "Wikimedia Commons · Adrian Michael · CC BY-SA 3.0"
+ },
+ "c-dach": {
+  "f": {
+   "l": [
+    "c-dach-l.webp",
+    2000,
+    1333
+   ],
+   "s": [
+    "c-dach-s.webp",
+    820,
+    547
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAADwBACdASocABMAPv1irE8rJSQiMBgMAWAfiUATpC5QMDDnb9g3evGPtBZvTvSYY8YA/q9N3ST6YMtcK39JIMlX7YcR8tt0BOSsBOvQJOigND4+owvfY6wUyKUqYaj8oapmXIA+Pi3wp+4Rtf9JK5xs+wU2rTmjg8SiEqq5lyZuulB8BwEkAA==",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "dach-bett",
+  "quelle": "",
+  "rechte": ""
+ },
+ "c-saal": {
+  "f": {
+   "l": [
+    "c-saal-l.webp",
+    1600,
+    1200
+   ],
+   "s": [
+    "c-saal-s.webp",
+    820,
+    615
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAABwBQCdASocABUAPv1wsFGrJiSiqAqpYB+JQBYdgRIdi+8CgZPskB1QsLCKAKoKIe8vJcYAAP2b6im06wYDYyZ3LY+IWAYx1UoC3WrfiFmeHC88ACY9GmdstFLEfCNhysqI6XZ7046LbLi5JuyMw1xfikDYmcGprqy/CGOn8LNoEcFub2KL+uvrJ1o488a+N3N79smrj0TNVL9LMGDtMkXzTF4T1QSMsMdA2GQAAAA=",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "saal-hr-kamin",
+  "quelle": "",
+  "rechte": ""
+ },
+ "c-suite": {
+  "f": {
+   "l": [
+    "c-suite-l.webp",
+    1600,
+    1200
+   ],
+   "s": [
+    "c-suite-s.webp",
+    820,
+    615
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAACwBQCdASocABUAPv1or1ErJSQisBgIAWAfiUAVhltINUO2PDHCp3GaFnsz+upejjwRpqVGnoAA/ouhICGaw4PWrmgCRT56DS+ezDQhWLHGnnNbzUmF3FBVaT0Zrj8KJXfY9NlBW3TzyXQm1QWAb9bwVI/uk7PqaxZFM/66nAuy1oPTlD96IljLwArRzoVxQAA=",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "z-signature-253",
+  "quelle": "",
+  "rechte": ""
+ },
+ "c-wellness": {
+  "f": {
+   "l": [
+    "c-wellness-l.webp",
+    1600,
+    1200
+   ],
+   "s": [
+    "c-wellness-s.webp",
+    820,
+    615
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAACQBQCdASocABUAPv1oqk6rJiOiMAgBYB+JbACdMoR4wCj1J595ZKYPyj8EkPvRBOxqaZ+1SADLAQ3FZWEW1QB5Q/d5A2A0aQ9++lI8d9+Y10CisvFf+aPi1YjMYO02knirBjl3VaxWpZ6NUbVXGC8kpIxBGORz5Ks0D41Hk0Y52VzuUDgQoFUSNkviZPwvmQ/omNWSHzZt3Sz6TLTtNjL2ZmhKE/yAAAA=",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "wellness",
+  "quelle": "",
+  "rechte": ""
+ },
+ "d-haus": {
+  "f": {
+   "l": [
+    "d-haus-l.webp",
+    1510,
+    944
+   ],
+   "s": [
+    "d-haus-s.webp",
+    820,
+    513
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAADQBACdASocABIAPv1ysFGrJqSiqAqpYB+JaACAAARj4ZqFC44dYMivoloRbtUFKAD+6+naNA6z8Dxh/lLFRZiVtS8IfzDKxLJ4Prq59CJgLbXRbPAOMPvxedeqKSIArltAaaOVa8cuVc17E7on0wsbpEo9ZL9oAAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "haus-wiese",
+  "quelle": "doldenhorn/extern/booking/booking-734676142.jpg",
+  "rechte": "Booking.com, vom Haus eingestellt"
+ },
+ "d-halle": {
+  "f": {
+   "l": [
+    "d-halle-l.webp",
+    1600,
+    1200
+   ],
+   "s": [
+    "d-halle-s.webp",
+    820,
+    615
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAAAQBQCdASocABUAPv1yslGrJqSiqAqpYB+JZgCdMsdBgZttfrMz1686HxvfMbg8oQwAAP67st2oeRDF9B4teJQN5WbEYve0MaLwHi37LpWwgI9UKKKOHqIs6+1HqcnP/N+AK90+ikK9O04NdEf9ZHy1tZES24hz8jlg6fn5x8/bfVyQm8jZ+KCoHRYGUkFIKQZWxwltCrNoAA==",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "halle",
+  "quelle": "doldenhorn/extern/myswitzerland/myswitzerland-00035507_m.jpg",
+  "rechte": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert"
+ },
+ "d-bad": {
+  "f": {
+   "l": [
+    "d-bad-l.webp",
+    1600,
+    1200
+   ],
+   "s": [
+    "d-bad-s.webp",
+    820,
+    615
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAwBQCdASocABUAPv1mrE6rJSQiMBgMAWAfiWoAnTLoiLX4+6rX0cuNbNQb5V7ET092AAD+xVulqpkJ40vLKepdGRzeqWImMEbk1mEk1nD+m5oQ4CyJIQBPdOX2elTV2shRSidDXhqHjDYI7v9NsFDh+HAHirIOlR6+dfKhIy6Rz9ZtyV7itjdQAAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "becken",
+  "quelle": "website/mediathek/225058_YZ6V5592-1.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "d-salon": {
+  "f": {
+   "l": [
+    "d-salon-l.webp",
+    1600,
+    1200
+   ],
+   "s": [
+    "d-salon-s.webp",
+    820,
+    615
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAACQBACdASocABUAPv1wslErJiSiqAqpYB+JYgCdMt12SCEXMCrA3GWARnapr4QA/kBRqyO5t6ZLaPHDLs5ViTnyjFQ4KHW1PfklD1eOH1e99W+1Wtg4Qzpasm3FdjxBAViH3wQ8WLqI4FoImEqagIZD+RoqalHCwVWhFBEhtBWbJ0PigEFgEM27PVz3MZYmj6UmC0Cfg0FZXYkzejf6/rva7gpFIy1N9rDhu7ue7XU3g0SAAAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "salon",
+  "quelle": "website/mediathek/226612_Doldenhorn_Ambiance_Aussicht_Voll_1-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "r-haus": {
+  "f": {
+   "l": [
+    "r-haus-l.webp",
+    1440,
+    1920
+   ],
+   "s": [
+    "r-haus-s.webp",
+    820,
+    1093
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAADwBACdASoVABwAPvVkqU6qpaOiN/VYAVAeiWQArhxE+enm40+4OQiE9gduL5apGYAA/rckrGnP31nCJp54SymHwy+vTPCfWr0g7XVCcASUzge+FgHp4ZnhkgmWeQvLvhQI2gXlzszrQH1rZL5gETFTIcwAAA==",
+  "haus": "Landgasthof Ruedihus",
+  "bild": "haus-fassade",
+  "quelle": "ruedihus/extern/wikipedia-commons/Ruedihus 01.jpg",
+  "rechte": "Wikimedia Commons, Pingufan13, CC BY-SA 3.0"
+ },
+ "r-stube": {
+  "f": {
+   "l": [
+    "r-stube-l.webp",
+    1286,
+    1714
+   ],
+   "s": [
+    "r-stube-s.webp",
+    820,
+    1093
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAAAwBQCdASoVABwAPv1wsVGrJiSiqAqpYB+JYgC7MswBUG31jysBqpKf+z+fliZ/A7znEADiarjtej967dAg5tl2KXlUZ4/ZuHVjYfMpsLDXt96sKv2h/PSgjqycLUBlDqK1y1nGBoC9bkAX/Ljxc7pUXl7+tUWbtF3S3WL8XyquGTMaurJjfiF82/YAAA==",
+  "haus": "Landgasthof Ruedihus",
+  "bild": "stube-kerze",
+  "quelle": "ruedihus/extern/myswitzerland/myswitzerland-00035541_m.jpg",
+  "rechte": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert"
+ },
+ "r-bett": {
+  "f": {
+   "l": [
+    "r-bett-l.webp",
+    1280,
+    1707
+   ],
+   "s": [
+    "r-bett-s.webp",
+    820,
+    1094
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAADwBQCdASoVABwAPv1srVErJaQisBgIAWAfiUATplxGMASYiWPLsRS9Uv5Lt7RCjr9mtQ3xwVliwAD+7oTJoZpodJbJI8d2gPi7wdN5ba9wlHqu+PrmxLd7m/rQta2ZLSxrxcTtojji6H0pi6Y0lD8UHTVMPT7JWNLFHa85z3A2QQaIE1GwssAjoXbUaW4X4MzVsQRrciNmumDfQcmVOuR5opzJPi3KKhjiyk3bDVVD25e0AAA=",
+  "haus": "Landgasthof Ruedihus",
+  "bild": "z-himmelbett",
+  "quelle": "website/mediathek/225924_2012-08-29-10.02.29-2-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "g-haus": {
+  "f": {
+   "l": [
+    "g-haus-l.webp",
+    1200,
+    1200
+   ],
+   "s": [
+    "g-haus-s.webp",
+    820,
+    820
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRtAAAABXRUJQVlA4IMQAAAAwBgCdASocABwAPu1aqE6ppKQiN/qoATAdiWwAnTKEem8kg4T+H5h3dviVhIW02MQoFvHF9y8sqKgAAP5WqiGI8sUYLOgEIVY57H1cLbEVOK4aInMbQTgxBZjanwI9UwUOqakQh1wR5MN50DIzMdxCVA8sZsioJDN6kiCR4LIKMo7hRxXDSbjIYRoUneiRsk948iThl9juFPnmXKs7gd8GwhGYIyT9IZ5cVbj5rR40oN7acHwv0JbWh658ZoCaaPW+g4wA",
+  "haus": "Berghotel Gasterntal",
+  "bild": "haus-giebel",
+  "quelle": "website/bilder/IMG_3915.jpg",
+  "rechte": "Website des Hauses"
+ },
+ "g-stube": {
+  "f": {
+   "l": [
+    "g-stube-l.webp",
+    845,
+    845
+   ],
+   "s": [
+    "g-stube-s.webp",
+    820,
+    820
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRtYAAABXRUJQVlA4IMoAAABwBgCdASocABwAPv1irE8rJSQiMBgMAWAfiWIAnTKDMHAlH/Q1Uv8XUpO/qvo6WQrIrXLILJU9krvhSIAA/s87/FtRsdbNfUWOz6FxQrkjGT3Q9j7FXQQ17ksKQdpY2brpGcL/yHTWWiB7e0aonISh1Qt8sM/fR/V7XQYf+Ii+oMtYKDhydBLNKTjpDfXQhzhGYdXoCViGou4ynlF9EA/AQtRg43Z5u9EqBSxMZvG9vlLPs8gSFPFl3t7E/P4xW26zX2i8MupCRUAA",
+  "haus": "Berghotel Gasterntal",
+  "bild": "stube",
+  "quelle": "website/bilder/gasstube_a116a13d-1a4d-4b16-ae04-31b71fe55e1b.png",
+  "rechte": "Website des Hauses"
+ },
+ "g-zimmer": {
+  "f": {
+   "l": [
+    "g-zimmer-l.webp",
+    1200,
+    1200
+   ],
+   "s": [
+    "g-zimmer-s.webp",
+    820,
+    820
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAABQBgCdASocABwAPu1mp06ppiOiN/VYATAdiWoAnTKEZJAX68euLtvdNykAEchCKD1Y5eSd4JtBDDEEAAD5KsgO0F2IMPzjfcpdbqSWHqWh5f+Ubby39Cc+GDPi1LG3Mxsc73Rp8NXApPMzsEsITombGCO+HcfjI6FWOBV1UuwjTnO6VSc0xKAN8OuN1MYEgOrGlDWuLW+0E9cM84Ac33vJaWENBxnJ1td4fme261L7cUGYxEoOEg8llQgB7NjIAAA=",
+  "haus": "Berghotel Gasterntal",
+  "bild": "z-doppel",
+  "quelle": "website/bilder/IMG_4257.jpg",
+  "rechte": "Website des Hauses"
+ },
+ "g-fondue": {
+  "f": {
+   "l": [
+    "g-fondue-l.webp",
+    1200,
+    1200
+   ],
+   "s": [
+    "g-fondue-s.webp",
+    820,
+    820
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRtQAAABXRUJQVlA4IMgAAACwBQCdASocABwAPv1srVArJaQiqA1RYB+JZACdMoABWNp6lJxRVe0A5AIiiiMryEybFugxBWAA/jp6ZqClyJjazwFn0pd14uqfGW/5sGzvuJAIFj6qs37wVJMSIMsTF3lLZnfIyuLTPGka3K5jFz2LMZ57l7B+Iu5o/db7BCPC/CJ8GGLhYaBaYV9waI5W/EzoY9QrsuFRhpaaIDc9+3xVEd8ufQ5J4O7RW3TN5kLXZFg4bmPKLPUW7b4VUV9XTgg2oVaZ1G+AAA==",
+  "haus": "Berghotel Gasterntal",
+  "bild": "e-fondue",
+  "quelle": "website/bilder/IMG_5470.jpg",
+  "rechte": "Website des Hauses"
+ },
+ "familie": {
+  "f": {
+   "l": [
+    "familie-l.webp",
+    900,
+    674
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAAAwBQCdASocABUAPvFkqU6ppaQiN/VYATAeCUAW9wIc3U6MkLM4/KvS1O8ovcapJ8bVwAD+8cnV4r+TrKGphSE2J0YYWaeX2duzkq4njOrTKpEkAwJnu3h0agMkq1O84N/nH8rmHPqHMGGExBvuGkxLP3OkSdDVUtReG2TIyhcz+H0v8wmIraeQnRDUg72DTkCxC7zXClLvh8EgAAA=",
+  "haus": "Landgasthof Ruedihus",
+  "bild": "familie",
+  "quelle": "website/mediathek/226295_Mini-mini-1-gts_waldhotel_doldenhorn_Adrian_Ehrbar_Photography-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek, Foto: Adrian Ehrbar"
+ },
+ "schluss": {
+  "f": {
+   "l": [
+    "schluss-l.webp",
+    2500,
+    1667
+   ],
+   "s": [
+    "schluss-s.webp",
+    1300,
+    867
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQBACdASocABMAPv1yrlArJyQisBgIAWAfiWUAuwAQ8L5t+62F6srE+397lFXYAAD+7pA9sHLYrscvdomdwtdkUUr5qh+fveKp6fLMx72TqICG/5blX7RDcLAAAA==",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "haus-abend",
+  "quelle": "doldenhorn/extern/myswitzerland/myswitzerland-WEDDING_6d91e11.jpg",
+  "rechte": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert"
+ },
+ "k-carlton": {
+  "f": {
+   "l": [
+    "k-carlton-l.webp",
+    900,
+    563
+   ],
+   "s": [
+    "k-carlton-s.webp",
+    820,
+    513
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABQBQCdASocABIAPvFkqE6ppaQiMAwBMB4JYgCpJ3JC+0LndubXcIbOi0NCUvWwmddmeQAA/ozwjZW0onJkkQHfT9EDxPLKKBnyL2hrcXa6k4Wp/fOu0ezVz9JXmQXgYgubj0vHuPSxFFaIjlyltuQfU0N63l5gAAA=",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "haus-tag",
+  "quelle": "",
+  "rechte": ""
+ },
+ "k-doldenhorn": {
+  "f": {
+   "l": [
+    "k-doldenhorn-l.webp",
+    900,
+    562
+   ],
+   "s": [
+    "k-doldenhorn-s.webp",
+    820,
+    512
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAAAQBQCdASocABIAPv1yrFArJyQisBgIAWAfiWIAvdAQ3dm5RTr9XT2X+nO+bCZUE9YAAP582qilNz4X3zZMGjitV2D+nI29DEmSOEqUi1Y6/oECschGBHacqBLUDLqHKDbE0awgHVrDrqb3SkW8Rg8DVGUNfeYAAAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "luft-tal",
+  "quelle": "website/mediathek/225754_DJI_0491-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "k-ruedihus": {
+  "f": {
+   "l": [
+    "k-ruedihus-l.webp",
+    900,
+    562
+   ],
+   "s": [
+    "k-ruedihus-s.webp",
+    820,
+    512
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAABQBACdASocABIAPv1oq06rJiOiMAgBYB+JZACw7CHfJVyadf8lmX+EWYkAAP7r4aiim4Osz7tkTP/seQji5pfFbK0fU+t0ITWoVzT3fh0n5HBEb8hU7p5pMsWFifFaU5EkwS70HTgXK48YzFGk9ZJIAAA=",
+  "haus": "Landgasthof Ruedihus",
+  "bild": "haus-daemmerung",
+  "quelle": "ruedihus/extern/myswitzerland/myswitzerland-00035536_m.jpg",
+  "rechte": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert"
+ },
+ "k-gasterntal": {
+  "f": {
+   "l": [
+    "k-gasterntal-l.webp",
+    900,
+    562
+   ],
+   "s": [
+    "k-gasterntal-s.webp",
+    820,
+    512
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAQBQCdASocABIAPulcqE6pJSQiN/qoASAdCWYAqPQhkITw5I1tSPgPe9rCk3AMqyAAAP0Sq3Yspj3K+60xQpJRHMH1T5oYpijPCXoXz/kQUz9YLMtEd+VNErtTAkS1iGrXqdvzeeHtzEZPIUswJUP3VyihqD1ZwWFClF+hO7x0bEAA",
+  "haus": "Berghotel Gasterntal",
+  "bild": "haus-profil-2",
+  "quelle": "extern/portale/tourismus-kandersteg-a747a3d3.jpg",
+  "rechte": "Tourismusbüro Kandersteg, vom Haus geliefert"
+ },
+ "strecke": {
+  "f": {
+   "l": [
+    "strecke-l.webp",
+    2560,
+    1045
+   ],
+   "s": [
+    "strecke-s.webp",
+    1400,
+    571
+   ],
+   "h": [
+    "strecke-h.webp",
+    773,
+    1306
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAABwAwCdASocAAsALsF+v1+jqysrCwDASxAE6AIdmoTi+VPq+ZAA/sjBEmLA5jOM/+aDHVCoNMyGuYd0w099BaKTU0uw3MpDZwyc86eAAAA=",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "land-harder",
+  "quelle": "frei/interlaken-vom-harder-kulm_pierre-selim-huard_cc-by-4.0.jpg",
+  "rechte": ""
+ },
+ "f-kandersteg": {
+  "f": {
+   "l": [
+    "f-kandersteg-l.webp",
+    2560,
+    1920
+   ],
+   "s": [
+    "f-kandersteg-s.webp",
+    1300,
+    975
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAABwBQCdASocABUAPv1urlCrJiQisBgIAWAfiWMAx+QRWbJAQLGJdc+AvYXwPxq+U9PTNKKIAP671bgCFo9skrBglg5WQs+Sepn/EpK2qxZ3rWvv0MIPrJxDMIgakOgc3Sh2sEWACATVcKYNyIuUOgbqgAA=",
+  "haus": "Berghotel Gasterntal",
+  "bild": "w-kandersteg",
+  "quelle": "extern/wikipedia-commons-2/Eggeschwand_ Kandersteg BE 20220712-jag9889.jpg",
+  "rechte": "Wikimedia Commons · Jag9889 · CC BY-SA 4.0"
+ },
+ "c-nacht": {
+  "f": {
+   "l": [
+    "c-nacht-l.webp",
+    1067,
+    1334
+   ],
+   "s": [
+    "c-nacht-s.webp",
+    820,
+    1025
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAADwBACdASoWABwAPvVkqU6qpaQiN/VYAVAeiWwAnTLfBr6ncuLL56Na0QN7rrCTFAAA/riLiiBxBH/pCIx/P/iHPfPqkQr8zbapZ2t/W3OecX7RONxZ13KuI8nQz7FEAwkyVy0qa71+WVfyrv7pFOTcuj//E/QCQCvVq/Sh83mejbBz24VKbxybRZc1e9QPWJj37fQ2yYeTiJ1+8NAwHWC4AAA=",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "haus-nacht",
+  "quelle": "extern/portale/interlaken-tourismus-carlton-europe-front-winter-schnee-gebaeude-jpg.jpg",
+  "rechte": ""
+ },
+ "c-jugendstil": {
+  "f": {
+   "l": [
+    "c-jugendstil-l.webp",
+    1600,
+    1200
+   ],
+   "s": [
+    "c-jugendstil-s.webp",
+    820,
+    615
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAACQBQCdASocABUAPv1osFErJaSisBgIAWAfiWIArktBAKo4MAYeQuf4jRr9exZ4ZHv9SA4YAAD+O0k+f472XKrrOSdDYCSTfgRIOJQjGHwVxDO+0lSGHU0asfMwjfM6t2ub/IKyg5W/fQiGoMZy7fowdfTbUKnUeKiH4zbDJpN1plTqYtiEBAAA",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "s-jugendstil",
+  "quelle": "",
+  "rechte": ""
+ },
+ "c-terrasse": {
+  "f": {
+   "l": [
+    "c-terrasse-l.webp",
+    1600,
+    1200
+   ],
+   "s": [
+    "c-terrasse-s.webp",
+    820,
+    615
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAAAwBQCdASocABUAPv1qrE6rJiQiMAgBYB+JQBYj42eVCS4Bq7SPanoPkzMEajsOpyL8AAD+i2pAwV5i4euOf12cIXn2JLQT9xt4bfoB6oI9eKw59h10+wl5itKVJwwvainZncxDxpIFfEcpoD4P78FdET/OmtfOlF2xJMc9AkAfCxsEQuo55IKblpybnSk0XxDqx7bAAAA=",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "dach-terrasse",
+  "quelle": "",
+  "rechte": ""
+ },
+ "d-abend": {
+  "f": {
+   "l": [
+    "d-abend-l.webp",
+    1800,
+    1200
+   ],
+   "s": [
+    "d-abend-s.webp",
+    820,
+    547
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQBQCdASocABMAPv1qr1ErJaQisBgIAWAfiWMAnTNMQaoD4tOxIVjljQqU1a2nPiV8LAAA/uvO3lkqHBMLDtTuDRO8Oe2bCs4xlq1OrR/7RJ1OVmHmm/uIov8/dgfxdn9h4RlUAAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "haus-abend",
+  "quelle": "doldenhorn/extern/myswitzerland/myswitzerland-WEDDING_6d91e11.jpg",
+  "rechte": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert"
+ },
+ "r-daemmerung": {
+  "f": {
+   "l": [
+    "r-daemmerung-l.webp",
+    1800,
+    1200
+   ],
+   "s": [
+    "r-daemmerung-s.webp",
+    820,
+    547
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAAAQBQCdASocABMAPv1oqk6rJaOpsAgBYB+JagCdMxgDTtei2+XWLFpLn7WnLCjCoE2AAP7o5O24OghkOZhUE3V4Z+a+dOUb8+Oo31RypE/el6hsyxbKZG80D5hWGBy1ciAsbXeIomKY49+VJyp7DfRwgb+QAWOMAAA=",
+  "haus": "Landgasthof Ruedihus",
+  "bild": "haus-daemmerung",
+  "quelle": "ruedihus/extern/myswitzerland/myswitzerland-00035536_m.jpg",
+  "rechte": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert"
+ },
+ "r-butzen": {
+  "f": {
+   "l": [
+    "r-butzen-l.webp",
+    1600,
+    1200
+   ],
+   "s": [
+    "r-butzen-s.webp",
+    820,
+    615
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAwBQCdASocABUAPv1yrVKrJqOiqAqpYB+JZAC7ABGbLOuLzekoM+yLuNiAAUMosmU8bgD+QQ+o7XIpCGYHsRE5zzTNBOoZpeUTFvxe34OIoTbyzMSxCZL4c+zZgU3+73p3fyZsh+DHDx0GAe5vQVajh7/wWnL1wfG18f6mRespbCT+GnERHKj0q5gUsogA",
+  "haus": "Landgasthof Ruedihus",
+  "bild": "butzen",
+  "quelle": "ruedihus/extern/wikipedia-commons/Ruedihus 02.jpg",
+  "rechte": "Wikimedia Commons, Pingufan13, CC BY-SA 3.0"
+ },
+ "r-stube-q": {
+  "f": {
+   "l": [
+    "r-stube-q-l.webp",
+    1600,
+    1200
+   ],
+   "s": [
+    "r-stube-q-s.webp",
+    820,
+    615
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAACQBACdASocABUAPv1wsFIrJiSiqAqpYB+JQBYdgb7vQwTr0E9O58170wHcenAA/qZ5Qq5a5kb4AoQMe324l/0aff4GyuM33JPDcfVVPNY9WBJWN1RSOy+aVfLf5Zb7dMMIV7mMgKgV8jiNxyskQk4NZLmXDwNrCrNCzKH/tRSwE5jUPZ3AnpGFJQ1JwoJf3o5Swqr+eAA=",
+  "haus": "Landgasthof Ruedihus",
+  "bild": "stube-kerze",
+  "quelle": "ruedihus/extern/myswitzerland/myswitzerland-00035541_m.jpg",
+  "rechte": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert"
+ },
+ "g-profil": {
+  "f": {
+   "l": [
+    "g-profil-l.webp",
+    1500,
+    1875
+   ],
+   "s": [
+    "g-profil-s.webp",
+    820,
+    1025
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAABwBQCdASoWABwAPvFkq06ppaQiMAwBMB4JagC/Sf/gK2Uv5XNrWvQnD8hH3bQ0bogCcg2wAP4VrVUBqdmGoL+hXN9BbDY7upXi2KBnZPEtDPVbsBaRCWdYzn9p39+z34ithRKf4RL+9pPYw38FP/0SnOmRRsxIC6KUjn/Jjd4WPLLD7RDSzbM5sF0mlclZHoL7qYPYAfQE0nsst38AAA==",
+  "haus": "Berghotel Gasterntal",
+  "bild": "haus-profil",
+  "quelle": "website/bilder/IMG_3912.jpg",
+  "rechte": "Website des Hauses"
+ },
+ "g-bruecke": {
+  "f": {
+   "l": [
+    "g-bruecke-l.webp",
+    1600,
+    1200
+   ],
+   "s": [
+    "g-bruecke-s.webp",
+    820,
+    615
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAQBQCdASocABUAPv1qrE6rJiQiMAgBYB+JQBTihA6JmvOAPvp10CmiC6jui25Ee6wgAP6YJbIgqzWEPlNdkw1+ITI4fQs5UlTMRqzmFLz9yIqtRQ2OQ4Xp16xxDUez8ruOpn/GdYJW+2/uBWR8dURT9qRuMfQizfAzIAAA",
+  "haus": "Berghotel Gasterntal",
+  "bild": "t-bruecke",
+  "quelle": "extern/wikipedia-commons/Selden-Hängebrücke über die Kander_ Gasterntal_ Kandersteg BE 20220712-jag9889.jpg",
+  "rechte": "Wikimedia Commons · Jag9889 · CC BY-SA 4.0"
+ },
+ "stephan": {
+  "f": {
+   "l": [
+    "stephan-l.webp",
+    900,
+    1125
+   ],
+   "s": [
+    "stephan-s.webp",
+    820,
+    1025
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAAAwBgCdASoWABwAPvVorE6qpiSiMBgMAVAeiWYAnTKDLHRx+UUhZf2qOVMaJ8YGuLsk//NOopuhjUAAAP7Y6PCgWq2LsVbWW2ies+gdenjijsubKYvaps+cp2Hsg1a738fu9qT0PieJ85RyfBP9jHe+AZgqd4w96etfBg6uitSzG0E+k8cE5SU6TpN/Eyz3jJh/c51Caqt+1WnLT5LayEVuvu3KYP2KW7y8t2vwAAA=",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "maeder",
+  "quelle": "",
+  "rechte": ""
+ },
+ "sz-ce1": {
+  "f": {
+   "l": [
+    "sz-ce1-l.webp",
+    2000,
+    1125
+   ],
+   "s": [
+    "sz-ce1-s.webp",
+    1400,
+    788
+   ],
+   "h": [
+    "sz-ce1-h.webp",
+    888,
+    1500
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQBACdASocABAAPv1orE6rJiQiMAgBYB+JZACdB6gAjQ19fQSt3zaqYAD+ZnyRCwpHHJgYzfCWSAFJCKKuW2bjoQRleAqH2g7dKfnOY0wi11HIEBYrOWh5oDp6s9n6tQuUxiHyJeI5lAAA",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "dach-blick",
+  "quelle": "",
+  "rechte": "",
+  "dunkel": "ins Bild gerechnet"
+ },
+ "sz-ce3": {
+  "f": {
+   "l": [
+    "sz-ce3-l.webp",
+    2560,
+    1440
+   ],
+   "s": [
+    "sz-ce3-s.webp",
+    1400,
+    788
+   ],
+   "h": [
+    "sz-ce3-h.webp",
+    900,
+    1521
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAwCdASocABAAPv1srE6rJiQiMAgBYB+JYwCdABbViu91m33l5SAA/SsjWIvjYapEjfBHFi2RUQvYw60zuK90OnTVkS4wFR6h/FJgiAA=",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "fenster-winter",
+  "quelle": "",
+  "rechte": "",
+  "dunkel": "ins Bild gerechnet"
+ },
+ "sz-do1": {
+  "f": {
+   "l": [
+    "sz-do1-l.webp",
+    2560,
+    1440
+   ],
+   "s": [
+    "sz-do1-s.webp",
+    1400,
+    788
+   ],
+   "h": [
+    "sz-do1-h.webp",
+    900,
+    1520
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABwAwCdASocABAALsF+v1+jqysrCwDASgDCgEO/NmrMFP/FUQAA/vRQFqJoCVLU1MfCnri5+yAR9OTMLVPBQ5zydvovXM8/4WUu6G7kDxQAAA==",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "fenster-wiese",
+  "quelle": "website/mediathek/225757_P1215882-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek",
+  "dunkel": "ins Bild gerechnet"
+ },
+ "sz-do2": {
+  "f": {
+   "l": [
+    "sz-do2-l.webp",
+    2496,
+    1404
+   ],
+   "s": [
+    "sz-do2-s.webp",
+    1400,
+    788
+   ],
+   "h": [
+    "sz-do2-h.webp",
+    900,
+    1520
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAwCdASocABAAPv1usE6rJyUiMAgBYB+JQBOmUAFImOB1EMkKeJPgAP4+8qD0Neu2Zvbyc1cVe995b/ASXeJL26F7XQYnqR8rMExXVkkVAAAA",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "becken",
+  "quelle": "website/mediathek/225058_YZ6V5592-1.jpg",
+  "rechte": "Website des Hauses, Mediathek",
+  "dunkel": "ins Bild gerechnet"
+ },
+ "sz-do3": {
+  "f": {
+   "l": [
+    "sz-do3-l.webp",
+    2560,
+    1440
+   ],
+   "s": [
+    "sz-do3-s.webp",
+    1400,
+    788
+   ],
+   "h": [
+    "sz-do3-h.webp",
+    900,
+    1520
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAQBACdASocABAAPv1orE6rJiQiMAgBYB+JQBUegzNMp5S7eFuyFSF4oAD+0MmVNJ+amj0vtuaXvVvuEAW0NDFTGBewt1H6AA4PgQf1cTYL3ctu1PI2d/cFQ+Hh39+b2rvc5/agavc0C/NwvQ0gZyppQAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "tisch",
+  "quelle": "doldenhorn/extern/myswitzerland/myswitzerland-00035527_m.jpg",
+  "rechte": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert",
+  "dunkel": "ins Bild gerechnet"
+ },
+ "sz-ga1": {
+  "f": {
+   "l": [
+    "sz-ga1-l.webp",
+    2560,
+    1440
+   ],
+   "s": [
+    "sz-ga1-s.webp",
+    1400,
+    788
+   ],
+   "h": [
+    "sz-ga1-h.webp",
+    900,
+    1520
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADQAwCdASocABAALsF+v1+jqysrCwDASyAE6AItjI7L13Ak2JNFnmAA/vF6HjLCL4p8L+sT2lRSkJvU4/Tp0ZjQziIOBFA4IX6//nGH7IqawPTiTzaKb2cOoIM135AA",
+  "haus": "Berghotel Gasterntal",
+  "bild": "t-kander",
+  "quelle": "extern/wikipedia-commons/Kander Selden.JPG",
+  "rechte": "Wikimedia Commons · Adrian Michael · CC BY 2.5",
+  "dunkel": "ins Bild gerechnet"
+ },
+ "sz-ga3": {
+  "f": {
+   "l": [
+    "sz-ga3-l.webp",
+    1800,
+    1012
+   ],
+   "s": [
+    "sz-ga3-s.webp",
+    1400,
+    787
+   ],
+   "h": [
+    "sz-ga3-h.webp",
+    796,
+    1344
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAADQBACdASocABAAPv1qrE6rJiQiMAgBYB+JbACdMoRwACUa8H7YpSIeQaktMcTQwAD6l5yyQ3GnVDb9LjXnjRlIVF+wGD6TWY8wV5F22pUdX/R3jK4YONOdv3Ym4dquBBYgqTqalRU34Qf9gg85rw9m6As37u1YeywvnQAA",
+  "haus": "Berghotel Gasterntal",
+  "bild": "sauna",
+  "quelle": "website/bilder/IMG_6790.jpg",
+  "rechte": "Website des Hauses",
+  "dunkel": "ins Bild gerechnet"
+ },
+ "sz-ce2": {
+  "f": {
+   "l": [
+    "sz-ce2-l.webp",
+    1600,
+    1200
+   ],
+   "s": [
+    "sz-ce2-s.webp",
+    820,
+    615
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAAAwBQCdASocABUAPv1mqU+rJSOiMBgMAWAfiWUAxvQQ5GMdEsXFhwAei4ZW7MixBru0AAD+xdAEuUXeKlAyrjJneWtOMC9VAGUmD6bQrdlqx/ROaQn67y1ShFJsvOWnKmwctUPhM18SoTEM1qJbR0i/i90OeKLaIAA=",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "postkarte-2",
+  "quelle": "",
+  "rechte": ""
+ },
+ "sz-ce2b": {
+  "f": {
+   "l": [
+    "sz-ce2b-l.webp",
+    890,
+    593
+   ],
+   "s": [
+    "sz-ce2b-s.webp",
+    820,
+    546
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAAAQBQCdASocABMAPv1urE6rJqQiMAgBYB+JZAC3uCFdI5P9p4L5viH29qCs7TQ55RNgAP6QSefjFqJcMiHBpU/r+YF4Gpyz+scaoxEzFir5V9M1A/MmBn7cF6YO9FRg515Yf+/b3AVTxiXb7W26dtcS4CKaWJ38xut2TdG+dZ4kTzhIrs6Q10vqVkgAAA==",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "hist-europe-farbe",
+  "quelle": "",
+  "rechte": ""
+ },
+ "sz-ru1": {
+  "f": {
+   "l": [
+    "sz-ru1-l.webp",
+    960,
+    1200
+   ],
+   "s": [
+    "sz-ru1-s.webp",
+    820,
+    1025
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADwBACdASoWABwAPv1urVArJiQiqA1RYB+JZAAALmrWxN6VGkMKJkDb47nD/bqi2gAA/nCeZttyIPKnATIP62ilagYxA+NRtXZrO/8nW/oVzOf/GLF5ZAuiaRArQWSnJpGQvKMf6boWKIXRq4Ke7rgAGMuTW2Xx7WtOZzyTfB1a0NlCe4/TfNw72y2XkpEXRfch+r4/OKI+c2P0N/3caYHZlMRz16E6I82HB8NjAAA=",
+  "haus": "Landgasthof Ruedihus",
+  "bild": "haus-winter",
+  "quelle": "ruedihus/extern/myswitzerland/myswitzerland-00035544_m.jpg",
+  "rechte": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert"
+ },
+ "sz-ru2": {
+  "f": {
+   "l": [
+    "sz-ru2-l.webp",
+    1360,
+    1700
+   ],
+   "s": [
+    "sz-ru2-s.webp",
+    820,
+    1025
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAADwBQCdASoWABwAPv1ytFGrJqUiqAqpYB+JbACdMoR+ABUJV/VlD7VK0RkrEH+KmUxYHY/574Q4PAD+5AMbj95gTcvYb4Lrv8U3AWu13mlaYrze4tObqAFS2SxlD8DOhFedJvR3ItswWLfExclYnTzcOsh7IrMvFx8sUUxLwp2hMPY1XxAAQ2BQObmm3jF+RUYy6JZ5io7jd9+xQP9bZYSBof1oIf1T7+Sqhv+4DwonP8sdm0SqlZ+sPPTTUIAA",
+  "haus": "Landgasthof Ruedihus",
+  "bild": "stube-rund",
+  "quelle": "website/mediathek/225953_DSC_2801-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "sz-ru3": {
+  "f": {
+   "l": [
+    "sz-ru3-l.webp",
+    1366,
+    1707
+   ],
+   "s": [
+    "sz-ru3-s.webp",
+    820,
+    1025
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAACwBQCdASoWABwAPv1mrE6rJSQiMBgMAWAfiWgAnS+xFAABuuOPWlofByOsoopqDAmYoO0VeQAA/hXFn4Ot0oRMBm9KlKLjanv1pkT1SORIvkbLyHDp+jT4XIgMYQZZ7HrkBs0DbgifF95lTQ1X9OaDLq0+xXeJ+2u5m7uOMxwa/5YGXZGbcoAA",
+  "haus": "Landgasthof Ruedihus",
+  "bild": "z-liebeslaube",
+  "quelle": "website/mediathek/226587_Ruedihus_Liebenslaube_Uebersicht_Voll-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "sz-ga2": {
+  "f": {
+   "l": [
+    "sz-ga2-l.webp",
+    1127,
+    845
+   ],
+   "s": [
+    "sz-ga2-s.webp",
+    820,
+    615
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADQBQCdASocABUAPv1qr08rJiSiKA1RYB+JZACdMsvCoEAAgbWXqxbrYxwKl+Jsai6E4VN2afIgAPlSI1Q5gg5cNXBxlFsRI2rIezarGxkTfbpEBEOx08RBP+c1IdUlI1kin7/eAVIH6atPPP32TvGro9j2as/kd7Lguj7XpxJPwABAwW7QB8lQu+QHF4alNH69mxf3kbiBamIClHeT3n0Vl2ysTpw9Kv69nJZAAAA=",
+  "haus": "Berghotel Gasterntal",
+  "bild": "stube",
+  "quelle": "website/bilder/gasstube_a116a13d-1a4d-4b16-ae04-31b71fe55e1b.png",
+  "rechte": "Website des Hauses"
+ },
+ "rb-auf": {
+  "f": {
+   "l": [
+    "rb-auf-l.webp",
+    2560,
+    1045
+   ],
+   "s": [
+    "rb-auf-s.webp",
+    1400,
+    571
+   ],
+   "h": [
+    "rb-auf-h.webp",
+    773,
+    1306
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAwCdASocAAsAPv1IulgrIqckmAFgH4lAE6AEQ3+WkY/JQja0HAD8fOU619mjLdb0P1sv25C7TN5uLR5IQeTvE7nxiHFDYAA=",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "land-harder",
+  "quelle": "frei/interlaken-vom-harder-kulm_pierre-selim-huard_cc-by-4.0.jpg",
+  "rechte": ""
+ },
+ "rb-fam": {
+  "f": {
+   "l": [
+    "rb-fam-l.webp",
+    1600,
+    1200
+   ],
+   "s": [
+    "rb-fam-s.webp",
+    820,
+    615
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAABwBQCdASocABUAPvVkqU6qpaQiN/VYAVAeiUAXYAIchTFgLOx6Pjqanw0K6ACy1qKnJj/AAP7xydXiv5Okc2b6pcLSxmmi4rxmxS9QFjARl72uwRbMw9GuxYcv2rm7xIriiGvRrOCEi0jUhtqnA7jKRuxG4pmOGBJZhLOB5w2GF0yFPzCZP9ht/Jj4W9oMc5+GDVKCDlwuirfh1poAAA==",
+  "haus": "Landgasthof Ruedihus",
+  "bild": "familie",
+  "quelle": "website/mediathek/226295_Mini-mini-1-gts_waldhotel_doldenhorn_Adrian_Ehrbar_Photography-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek, Foto: Adrian Ehrbar"
+ },
+ "rb-ch-do": {
+  "f": {
+   "l": [
+    "rb-ch-do-l.webp",
+    900,
+    1125
+   ],
+   "s": [
+    "rb-ch-do-s.webp",
+    820,
+    1025
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAACwBQCdASoWABwAPuleqE6pJSQiN/qoASAdCWQAx+RXcLikzy945LqRswAWrSfrzjPXCEMbt4AA/r3pf1wwjW8f++G9fxfVp6Sbq0dofVPEdRoaUP+VeCpI4VaO2GRQQ7ehieH/IGx91Q/yxjnwU7s94ZV/fuyo6u47eQQt8lDIfExwdAAAAA==",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "luft-tal",
+  "quelle": "website/mediathek/225754_DJI_0491-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "rb-ch-ru": {
+  "f": {
+   "l": [
+    "rb-ch-ru-l.webp",
+    900,
+    1125
+   ],
+   "s": [
+    "rb-ch-ru-s.webp",
+    820,
+    1025
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADwBACdASoWABwAPv1urVArJiQiqA1RYB+JZAAALmrWxN6VGkMKJkDb47nD/bqi2gAA/nCeZttyIPKnATIP62ilagYxA+NRtXZrO/8nW/oVzOf/GLF5ZAuiaRArQWSnJpGQvKMf6boWKIXRq4Ke7rgAGMuTW2Xx7WtOZzyTfB1a0NlCe4/TfNw72y2XkpEXRfch+r4/OKI+c2P0N/3caYHZlMRz16E6I82HB8NjAAA=",
+  "haus": "Landgasthof Ruedihus",
+  "bild": "haus-winter",
+  "quelle": "ruedihus/extern/myswitzerland/myswitzerland-00035544_m.jpg",
+  "rechte": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert"
+ },
+ "rb-ch-ce": {
+  "f": {
+   "l": [
+    "rb-ch-ce-l.webp",
+    900,
+    1125
+   ],
+   "s": [
+    "rb-ch-ce-s.webp",
+    820,
+    1025
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAQBQCdASoWABwAPv1qqk6rJiOiMAgBYB+JZwDDNCFrf3HLG7edWjZCaGKpdNsmFQ4AAP6yMUHcsMMxlVO15uhO17KlgTTBNuzPQGz1hqP25K4nPQrMxk9Z7T+qGxdAl08bnNDa0KglyI+828JR/2IkfCSFRlx/3epUnZAA",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "postkarte-2",
+  "quelle": "",
+  "rechte": ""
+ },
+ "rb-ch-ga": {
+  "f": {
+   "l": [
+    "rb-ch-ga-l.webp",
+    864,
+    1080
+   ],
+   "s": [
+    "rb-ch-ga-s.webp",
+    820,
+    1025
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAADwBACdASoWABwAPv1srE6rJiQiMAgBYB+JagC/Z8CB2wEMP6q/YScsauBcaYk3TIAA/tu3DUdkrxB1ubIVZBDVr52EQlVQIrUudmTo1fLGW7kEd6KnnCqlSf+u9pGx63dPdnmP9lq8c3qGYXTc6fUdXo9BF+nC7dn912MhAqxgwYxD/ifyIDB/cOQ31XD8+1OIchfuF3mGvCQAAAA=",
+  "haus": "Berghotel Gasterntal",
+  "bild": "haus-alt",
+  "quelle": "extern/booking/booking-577719355.jpg",
+  "rechte": "Booking.com, vom Haus eingestellt"
+ },
+ "rb-ce-haus": {
+  "f": {
+   "l": [
+    "rb-ce-haus-l.webp",
+    1821,
+    864
+   ],
+   "s": [
+    "rb-ce-haus-s.webp",
+    820,
+    389
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwBACdASocAA0APv1qrk8rJiQiMAgBYB+JagCdACHvVPEGWxI5Q17zHGAA/c60ruIaZOhQ5TNzq/qLWFuxWwjrQrB4xctYZp2vkMs/FkJP9Qg9LLBZYNTqrxFnQReqz5dqQWzDktXWMFvJAS7rt6AA",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "haus-tag2",
+  "quelle": "",
+  "rechte": ""
+ },
+ "rb-ce-pav": {
+  "f": {
+   "l": [
+    "rb-ce-pav-l.webp",
+    1000,
+    1333
+   ],
+   "s": [
+    "rb-ce-pav-s.webp",
+    820,
+    1093
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAAAwBQCdASoVABwAPv1oqk6rJaOiMAgBYB+JQBOmZDBwMtfJAfAGcvcWVMO4NrYHjhmYAADdU+EUql3CQAwt/ayO4wVACKZCiPLGWVKyeUxUaSVNlb2AaU6yojKkgSYx8laEZWAbGE8xQl5cR1+PFKJbmAl6dOSYjmR7PxBX9yAWf7XavDNeFMC6eY1UkW+ejPksXgM+7it+fyLMAr0iAAAA",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "dach-winter",
+  "quelle": "",
+  "rechte": ""
+ },
+ "rb-ce-kamin": {
+  "f": {
+   "l": [
+    "rb-ce-kamin-l.webp",
+    1400,
+    875
+   ],
+   "s": [
+    "rb-ce-kamin-s.webp",
+    820,
+    512
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAABwBQCdASocABIAPv1wr1IrJiQiqAqpYB+JZgCdMtPw6b+AL+a7N3iIJuXv/hqgG/AGrawAAP6YTW7hvpWH9lMS7O18piNHdH0jyp1joDfeRq9tHGsFZFIOJX3OnTIwO1fnZ5/16c7Np0GUEB8tTbC4J7QTtWG3HE1aJxhkVDIP39drVMyquCX65sLHkOCvZ4WqT42QRuau3iVjmna1x15tKloBNOSUyAsbSkDYuAA=",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "kaminbar",
+  "quelle": "",
+  "rechte": ""
+ },
+ "rb-ce-keller": {
+  "f": {
+   "l": [
+    "rb-ce-keller-l.webp",
+    1000,
+    1250
+   ],
+   "s": [
+    "rb-ce-keller-s.webp",
+    820,
+    1025
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRuoAAABXRUJQVlA4IN4AAABQBQCdASoWABwAPv12s1OrJySiqAgBYB+JaACdMoR+ABSA0Y/Q0P9OA8s2eQ1Xw3i4OAAA/uN+qOS1ngPOWpTo6qBiym3gJx3R8pYHhiX+uK1RSk6VE8cpy7o4GP9lyFI5P2JJP0Px180BpdW9VuxJu3sy5vrL/M/RvCAeaJyVBPObxFh/ahq5tYU43rUfLJ4xHd8nhsuQTLDlsmmn5Zkd9WJ+75GKJk2Li5A/VYdPH2VAgjcpOl2cJfr6EHSMuQl92JCvzI04afYI94rYYLjgTJgAAV1xLFG9c+SAAAA=",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "vk-kerzen-ganz",
+  "quelle": "",
+  "rechte": ""
+ },
+ "rb-ce-suite": {
+  "f": {
+   "l": [
+    "rb-ce-suite-l.webp",
+    1200,
+    900
+   ],
+   "s": [
+    "rb-ce-suite-s.webp",
+    820,
+    615
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAACwBQCdASocABUAPv1or1ErJSQisBgIAWAfiUAVhltINUO2PDHCp3GaFnsz+upejjwRpqVGnoAA/ouhICGaw4PWrmgCRT56DS+ezDQhWLHGnnNbzUmF3FBVaT0Zrj8KJXfY9NlBW3TzyXQm1QWAb9bwVI/uk7PqaxZFM/66nAuy1oPTlD96IljLwArRzoVxQAA=",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "z-signature-253",
+  "quelle": "",
+  "rechte": ""
+ },
+ "rb-ce-dach": {
+  "f": {
+   "l": [
+    "rb-ce-dach-l.webp",
+    1400,
+    875
+   ],
+   "s": [
+    "rb-ce-dach-s.webp",
+    820,
+    512
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAAAwBQCdASocABIAPv1ur1CrJiQisBgIAWAfiWIAnTLfASht68v/GU/DAf/S1SIBWZFlgAD+kEiAn2vsMqo/bt4hW9Y9K5/aO5X6ZKrzfxAKG7QlpCC0KiogpwEgAdmg2cimlzBYj6WNsycBqI/EFOOMvjPq2mOV95XV4cv08mXNbElYGNx1OWnLYtb3ejJ5LjjAAAAA",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "dach-blick",
+  "quelle": "",
+  "rechte": ""
+ },
+ "rb-do-salon": {
+  "f": {
+   "l": [
+    "rb-do-salon-l.webp",
+    1600,
+    1200
+   ],
+   "s": [
+    "rb-do-salon-s.webp",
+    820,
+    615
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAACwBQCdASocABUAPv1wrlArJqQisBgIAWAfiUATpnB3QAO523KyICoNLDlwvyD4e2/yDpjA8AAA/tHJFVjoWfEG3KVSLCLjN5sPfyloLeiBvi+rUH/5FNhk6/zUIzJUPb7Wla6f0qU1QFRNeErRLJ0ZnfbneU9mA+ZmbR0CQh+D01Naseaxnu9qOGIkimknfvZguqP9z563n4N6i0HU7oak+hiuNL471oAAAA==",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "salon-bleu",
+  "quelle": "doldenhorn/extern/myswitzerland/myswitzerland-00035529_m.jpg",
+  "rechte": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert"
+ },
+ "rb-do-k": {
+  "f": {
+   "l": [
+    "rb-do-k-l.webp",
+    1000,
+    1250
+   ],
+   "s": [
+    "rb-do-k-s.webp",
+    820,
+    1025
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAADQBACdASoWABwAPvVop06qpiMiMAwBUB6JQBlAA2VwwFtZVAZTz8i3GhPdnKWlgAD+y9Tl2KuSxMaRuYsrG3lP5s6EQQnFuTKkrFYUz22JJqxuOdc3QNyfdqeRFYagDCsRU8vB4Cg3dmtlPcBhEjakGEZPF1FGJSSIr5iaPqmWCBEGuXAmo5hZRcTegAAA",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "tisch",
+  "quelle": "doldenhorn/extern/myswitzerland/myswitzerland-00035527_m.jpg",
+  "rechte": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert"
+ },
+ "rb-do-s": {
+  "f": {
+   "l": [
+    "rb-do-s-l.webp",
+    1000,
+    1250
+   ],
+   "s": [
+    "rb-do-s-s.webp",
+    820,
+    1025
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAADwBACdASoWABwAPv1srU6rJiQiMAgBYB+JaACsIKnBn2qtLe+UjLRfDdYof/p0j5wA7ztb8bunwtxq2o5AMc2Kwr8V/3CPWWiR8jt+uikYOFdIhj1X8hnX6XVwX2m8q+agyCBH48oJRS23Ra+pBOtNVdmHho+JkicgVxiOKecLQDdpzXlo9zmHuywJFcSpxEiw/Gv+NUYgQ+0AAAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "salzarium",
+  "quelle": "website/mediathek/225167_Salzarium_2-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "rb-do-z": {
+  "f": {
+   "l": [
+    "rb-do-z-l.webp",
+    1000,
+    1250
+   ],
+   "s": [
+    "rb-do-z-s.webp",
+    820,
+    1025
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAADQBQCdASoWABwAPv1oq08rJiOiMAgBYB+JZgCdOUFUQBcrMMlXmu7KGggiCrCLp4cEeJJscjIAAMxBmPHfWAzmrz6keUW/11Nhkt9bXIumpFYv7vV/987E8KleLgBSJZwAnsiNaaicKZt//vDgIr9mDnC7cLzUsD7pYQPFQSaVde8H3hWHKlu7qbhDkOJwcnDOF1UQAAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "z-suite-2",
+  "quelle": "website/mediathek/226505_Waldhotel_Doldenhorn_Suite_Fenster_Voll-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "rb-ru-fass": {
+  "f": {
+   "l": [
+    "rb-ru-fass-l.webp",
+    1600,
+    1200
+   ],
+   "s": [
+    "rb-ru-fass-s.webp",
+    820,
+    615
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAADwBACdASocABUAPv1sq06rJiOiMAgBYB+JZACzgB09f/YDOrO+NwLOjxb8yImXMOgA+MByY71aSILnlLNIlxy2ts9TpelgOo8/9ps+soYbPAGbbups+8vo0TD9XfvqFPYIKJ+Yv07gbpr/6OFTdFeaZdU9owWDK86tK1luqv/sqqNiTmXPcUPJwAA=",
+  "haus": "Landgasthof Ruedihus",
+  "bild": "haus-fassade",
+  "quelle": "ruedihus/extern/wikipedia-commons/Ruedihus 01.jpg",
+  "rechte": "Wikimedia Commons, Pingufan13, CC BY-SA 3.0"
+ },
+ "rb-ru-stube": {
+  "f": {
+   "l": [
+    "rb-ru-stube-l.webp",
+    900,
+    1125
+   ],
+   "s": [
+    "rb-ru-stube-s.webp",
+    820,
+    1025
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAADQBACdASoWABwAPv1yr1IrJqQiqAqpYB+JYgAAKdQszhApaxWXGtgiXU2uwrg8AAD4QYpNttsbT/qIIk/QMYUUuhaL0GHf73pbA2F/uk/U/yTfY1q9oI/3QBXYihT2MFySjeXObv7fjbv/e9Zh9ezdKZ/Alabc/YbiklyFfY/+t3vYt+AAAA==",
+  "haus": "Landgasthof Ruedihus",
+  "bild": "stube-kerze",
+  "quelle": "ruedihus/extern/myswitzerland/myswitzerland-00035541_m.jpg",
+  "rechte": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert"
+ },
+ "rb-ru-bett": {
+  "f": {
+   "l": [
+    "rb-ru-bett-l.webp",
+    900,
+    1125
+   ],
+   "s": [
+    "rb-ru-bett-s.webp",
+    820,
+    1025
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAABwBQCdASoWABwAPv1oqE8rJaOiMBgMAWAfiUATploYNS0ct/wTf7KJBQSbqocW00h3eLwAAP7uhL14nIIK2XSYltUhR4niGbJap7gS2MiARJcwdfUN/LtEiaebZBnRFJBaqQUqe+efpl30XtKFL8tG2OtK0Lwru+I+oZGKOo7qaefEOx3g+GP4WJpdXCcOfB6TBTRMasuDzN+cOTM/McR4Aj+ei2IQzN7THKCKGAA=",
+  "haus": "Landgasthof Ruedihus",
+  "bild": "z-himmelbett",
+  "quelle": "website/mediathek/225924_2012-08-29-10.02.29-2-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "rb-ru-roesti": {
+  "f": {
+   "l": [
+    "rb-ru-roesti-l.webp",
+    900,
+    900
+   ],
+   "s": [
+    "rb-ru-roesti-s.webp",
+    820,
+    820
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAABwBQCdASocABwAPv1qrE6rJiQiMAgBYB+JbACdMoR3cBZ152vS56wY02N/GgQxefKK833AAP7qlua9ehJZBfn6v55rEFikYdcsZ/HhB4lB/bImcZssMImOTkl3x5ESDQn3RiUDYdhRtPw0DQ+bfInKgG3Bps7suqZnr7F/xxVLiwtCCZfj5Qx2AaMHtsRkl3CDe/ClRY52wInVdi84osgWfhaX6KNAA7zfo/Lf3QeyHHH/M3tQOtwz5/5liwAA",
+  "haus": "Landgasthof Ruedihus",
+  "bild": "e-roesti",
+  "quelle": "website/mediathek/225951_086Q8820-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "rb-ru-zopf": {
+  "f": {
+   "l": [
+    "rb-ru-zopf-l.webp",
+    900,
+    900
+   ],
+   "s": [
+    "rb-ru-zopf-s.webp",
+    820,
+    820
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAABQBQCdASocABwAPu1Yp06ppKOiN/qoATAdiWYAnTMYAyZfc3j5uRKnM6u0qjxleJa0eAAA8nJVE/V0ntdIGY0AXfXHL3rbme83PmGMXtH+WFHnqU1a84pAHQpodoA/FYlrj99VX5/yZqGJA32xncdMVrx9arPd/+h9Dva4achM5gNbbndPUPaP5CsydzB2pnDujRd3bWw9IPgJcbqBreaFmRUO7E2dNV5lWSk2UBiI6VjlWpdH+QDkDcAAAA==",
+  "haus": "Landgasthof Ruedihus",
+  "bild": "e-zopf",
+  "quelle": "ruedihus/extern/booking/booking-32311076.jpg",
+  "rechte": "Booking.com, vom Haus eingestellt"
+ },
+ "rb-ru-garten": {
+  "f": {
+   "l": [
+    "rb-ru-garten-l.webp",
+    1100,
+    825
+   ],
+   "s": [
+    "rb-ru-garten-s.webp",
+    820,
+    615
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAAAQBQCdASocABUAPv1wslGrJiSiqAqpYB+JQAAF9RSCHqh/BT8kQSEfAE5PBqrv2C7AAP6DuRiIyR7SNTlecHXxYPWExtGEZdDcOVaMaqM8hIhLWkOokubUGWf75XEjhJ2tWgvFAw+tzqbBHt6LwdhYAJyDxQ7t9a2l/8QZ2PQOQDWy+kL5VOpkqSftLmQmFoFDK6okpyK6OqzTUx4HTLK+hvgnEsNnhpTR73zznKhcU/cVOHzBMGcd2YIAAAAA",
+  "haus": "Landgasthof Ruedihus",
+  "bild": "garten-gitter",
+  "quelle": "ruedihus/extern/myswitzerland/myswitzerland-00035545_m.jpg",
+  "rechte": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert"
+ },
+ "rb-w-klus": {
+  "f": {
+   "l": [
+    "rb-w-klus-l.webp",
+    1000,
+    1333
+   ],
+   "s": [
+    "rb-w-klus-s.webp",
+    820,
+    1093
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAAAQBQCdASoVABwAPv1oq06rJiOiMAgBYB+JZQDMWCF5C4N7GdMBvYsM8TH0eCOBVwrwAP7Y6lDlf77+HbkAHM9oIiT/2Huyula92nsY//y1PPUAudx8xr1jRjgHzL7TVOMxHOLkG8DPWx2w6oygZMNtyhC64EdcW0wxvzffg9+atq3/NlHdUv30YOAh8HoT+dkpwqAA",
+  "haus": "Berghotel Gasterntal",
+  "bild": "w-klus",
+  "quelle": "extern/wikipedia-commons-2/Kandersteg Klus2.jpg",
+  "rechte": "Wikimedia Commons · Adrian Michael · CC BY 2.5"
+ },
+ "rb-w-bruecke": {
+  "f": {
+   "l": [
+    "rb-w-bruecke-l.webp",
+    1000,
+    1333
+   ],
+   "s": [
+    "rb-w-bruecke-s.webp",
+    820,
+    1093
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAACwBACdASoVABwAPvFiqE6ppaQiMAwBMB4JQBdgA7wZGo4Cs9QVoG7SfxBxDCgAAP6VBklcu1JmGiY6e/KlLsI32FGX2+zlOSI9m7faKo4YcTBRW78ofzp5BPWZv6COY70ffwm6yDMLDMpYAm+z2x4x3L4238UcfIW3AgAA",
+  "haus": "Berghotel Gasterntal",
+  "bild": "t-bruecke",
+  "quelle": "extern/wikipedia-commons/Selden-Hängebrücke über die Kander_ Gasterntal_ Kandersteg BE 20220712-jag9889.jpg",
+  "rechte": "Wikimedia Commons · Jag9889 · CC BY-SA 4.0"
+ },
+ "rb-w-tal": {
+  "f": {
+   "l": [
+    "rb-w-tal-l.webp",
+    1000,
+    1333
+   ],
+   "s": [
+    "rb-w-tal-s.webp",
+    820,
+    1093
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAAAwBQCdASoVABwAPv1urFCrJiQiqA1RYB+JQBOmaYjar3eBDLALbT9WmLUAcefkfwtKQAD+9hG9PTywvkU254ZXbVme+ChBVCs+FSHWcQ2q2QdYbJza3LDTxQ55HzwOZ76ccvldfUPQhUh+QJ0xb/sY3QHKjSOAAAA=",
+  "haus": "Berghotel Gasterntal",
+  "bild": "w-wiesen",
+  "quelle": "extern/wikipedia-commons-2/Gasterntal Wiesen.jpg",
+  "rechte": "Wikimedia Commons · Adrian Michael · CC BY-SA 3.0"
+ },
+ "rb-ga-haus": {
+  "f": {
+   "l": [
+    "rb-ga-haus-l.webp",
+    2400,
+    1028
+   ],
+   "s": [
+    "rb-ga-haus-s.webp",
+    820,
+    351
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQBACdASocAAwAPv1qsE6rJiUiMAgBYB+JbAC7ACGK1VANLEOj3C9LIAD+EPhthNFg+nRn5N/2x0yUM3Oq8AMBaB/1gvs+fFLuwcrVHm5Z8o6q7nrjf0vWmt0umEpOq55xdCAA",
+  "haus": "Berghotel Gasterntal",
+  "bild": "haus-profil",
+  "quelle": "website/bilder/IMG_3912.jpg",
+  "rechte": "Website des Hauses"
+ },
+ "rb-ga-stube": {
+  "f": {
+   "l": [
+    "rb-ga-stube-l.webp",
+    845,
+    845
+   ],
+   "s": [
+    "rb-ga-stube-s.webp",
+    820,
+    820
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRtYAAABXRUJQVlA4IMoAAABwBgCdASocABwAPv1irE8rJSQiMBgMAWAfiWIAnTKDMHAlH/Q1Uv8XUpO/qvo6WQrIrXLILJU9krvhSIAA/s87/FtRsdbNfUWOz6FxQrkjGT3Q9j7FXQQ17ksKQdpY2brpGcL/yHTWWiB7e0aonISh1Qt8sM/fR/V7XQYf+Ii+oMtYKDhydBLNKTjpDfXQhzhGYdXoCViGou4ynlF9EA/AQtRg43Z5u9EqBSxMZvG9vlLPs8gSFPFl3t7E/P4xW26zX2i8MupCRUAA",
+  "haus": "Berghotel Gasterntal",
+  "bild": "stube",
+  "quelle": "website/bilder/gasstube_a116a13d-1a4d-4b16-ae04-31b71fe55e1b.png",
+  "rechte": "Website des Hauses"
+ },
+ "rb-ga-fondue": {
+  "f": {
+   "l": [
+    "rb-ga-fondue-l.webp",
+    1000,
+    1000
+   ],
+   "s": [
+    "rb-ga-fondue-s.webp",
+    820,
+    820
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRtQAAABXRUJQVlA4IMgAAACwBQCdASocABwAPv1srVArJaQiqA1RYB+JZACdMoABWNp6lJxRVe0A5AIiiiMryEybFugxBWAA/jp6ZqClyJjazwFn0pd14uqfGW/5sGzvuJAIFj6qs37wVJMSIMsTF3lLZnfIyuLTPGka3K5jFz2LMZ57l7B+Iu5o/db7BCPC/CJ8GGLhYaBaYV9waI5W/EzoY9QrsuFRhpaaIDc9+3xVEd8ufQ5J4O7RW3TN5kLXZFg4bmPKLPUW7b4VUV9XTgg2oVaZ1G+AAA==",
+  "haus": "Berghotel Gasterntal",
+  "bild": "e-fondue",
+  "quelle": "website/bilder/IMG_5470.jpg",
+  "rechte": "Website des Hauses"
+ },
+ "rb-ga-sauna": {
+  "f": {
+   "l": [
+    "rb-ga-sauna-l.webp",
+    1000,
+    1000
+   ],
+   "s": [
+    "rb-ga-sauna-s.webp",
+    820,
+    820
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAAAQBgCdASocABwAPv1srk+rJiQiKA1RYB+JbACdMoRwEGcgqkOYnfUo7SR0+PLA5ZGzMnlRZ2wCQAAA/m8DauFU5Jme80EPfsaF73D+hkP+LcczjVftnkWGhGJP5JAjdpJjfJBhOtjqjdkNKOdLtprZg0DNFd2Ok49qs36HHLQskelUe0EfuatsZ7fPCHBhC0+sx/ILfrjjwpXo4biHv8mIjxfBYHH9V//UwQDI6RF9xlou+bbmpAXufBMAAA==",
+  "haus": "Berghotel Gasterntal",
+  "bild": "sauna",
+  "quelle": "website/bilder/IMG_6790.jpg",
+  "rechte": "Website des Hauses"
+ },
+ "rb-ga-kuehe": {
+  "f": {
+   "l": [
+    "rb-ga-kuehe-l.webp",
+    1000,
+    1000
+   ],
+   "s": [
+    "rb-ga-kuehe-s.webp",
+    820,
+    820
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADwBACdASocABwAPv1wrE+rJqQiMBgIAWAfiWQAnTOOwMMNwur2YCBiLM/lgPIOKAAA9wQvd9uqjJFeFvj25NPa9q1WuiOLuCJWbqohYsXfdhW0W1YK6TJfDHi7/LtrFBnRAku/If2Q1Ylw6Xh5vUwtu+y+Qa6DORPHIqFQx9MzfRM10ypC4bCnRRke7Ko8kcZz4mPb1dYlWayJnV7tP8LWcKqBwicjphV+/EHAAAA=",
+  "haus": "Berghotel Gasterntal",
+  "bild": "t-kuehe",
+  "quelle": "extern/wikipedia-commons/Wanderung im Gasterntal.jpg",
+  "rechte": "Wikimedia Commons · Chrisi1964 · CC0"
+ },
+ "rb-ein": {
+  "f": {
+   "l": [
+    "rb-ein-l.webp",
+    2400,
+    1350
+   ],
+   "s": [
+    "rb-ein-s.webp",
+    1300,
+    731
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABwBACdASocABAAPv1srE6rJiQiMAgBYB+JbACdMoMYAOSl+r694NYrRoaAAAD++cPmcqIjJwn44pszzw0m2uP/kp/m+pybXDGk4wDy3/i3LZcuL/iJ3+FpZnX5fYlsvAe/xvQAAAA=",
+  "haus": "Carlton-Europe Interlaken",
+  "bild": "sk-nacht",
+  "quelle": "",
+  "rechte": ""
+ },
+ "rb-ga-weg": {
+  "f": {
+   "l": [
+    "rb-ga-weg-l.webp",
+    1124,
+    535
+   ],
+   "s": [
+    "rb-ga-weg-s.webp",
+    820,
+    390
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACwAwCdASocAA0APv1qrE6rJiQiMAgBYB+JagC06CGHQHiFjTX+AAD+byTbnVZMBVc0ULkGCFuGXlHc646sPB87LmHxnyAnyocIstY0yEIrUcs45QeKHdVbfN2QzdzPGZmo8aAA",
+  "haus": "Berghotel Gasterntal",
+  "bild": "wegweiser",
+  "quelle": "extern/booking/booking-422474563.jpg",
+  "rechte": "Booking.com, vom Haus eingestellt"
+ },
+ "dv-fruehstueck": {
+  "f": {
+   "l": [
+    "dv-fruehstueck-l.webp",
+    1700,
+    954
+   ],
+   "s": [
+    "dv-fruehstueck-s.webp",
+    820,
+    460
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAACQBACdASocABAAPv1orE6rJiQiMAgBYB+JYwCdABupIbjHPJ72jRFTk80jCPgA/qE8J+UWk23+ByrvBOMZa102Ov/Ve0I9WFYqKfyh7MMUuouS41FYhghVGriNcAZ/EQfmBV9+HEWpl+MW+rRs13ysMRHl+oTLdCBUEPZSevj8aEgA",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "fruehstueck",
+  "quelle": "website/mediathek/226630_Doldenhorn_Ambiance_Aussicht_Voll_9-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-fenstertisch": {
+  "f": {
+   "l": [
+    "dv-fenstertisch-l.webp",
+    1700,
+    1141
+   ],
+   "s": [
+    "dv-fenstertisch-s.webp",
+    820,
+    550
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAAAwBQCdASocABMAPv1ysFIrJqSiqAqpYB+JQBdmaYgfF1GpmVXNDzObZE58+NNFCNS3AAD+vxgXP4f9lPQkYu8BaqYvCx0JbYnmjoqwgOKpHY7E+RSj3JANjC5kxe53YU8r3x+y3mSOBkqIaUrNhQaEuzIMHRD8qHiXHNutZbCYU9ZWttpoFLgekEJgtygjwmC+MLPaeLk7lIDxAAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "fenstertisch",
+  "quelle": "website/mediathek/226619_Doldenhorn_Ambiance_Aussicht_Voll_7-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-wintergarten": {
+  "f": {
+   "l": [
+    "dv-wintergarten-l.webp",
+    1700,
+    1134
+   ],
+   "s": [
+    "dv-wintergarten-s.webp",
+    820,
+    547
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAACQBQCdASocABMAPv1urlCrJiQisBgIAWAfiWUAwzQO9df/7z8W8An8cyupFQNVDb1XNwUN8AD6CtvXgWGqWQ/wA3GSReWBBABZBmRNZrVZF99GqJYhKtWd/DNQJfdK9nMfBIbFkUVTToIUTtgY152wQc8gc8qDidH3NZlKSNiamdp6EcMsCiFsjKoBJhcQAAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "wintergarten",
+  "quelle": "website/mediathek/226635_Doldenhorn_Ambiance_Aussicht_Voll_10-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-tal": {
+  "f": {
+   "l": [
+    "dv-tal-l.webp",
+    1700,
+    1134
+   ],
+   "s": [
+    "dv-tal-s.webp",
+    820,
+    547
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAQBQCdASocABMAPv1ksE6rJSUiMBgMAWAfiWIAwNwQ4UqUpWmlxHtGyrAsON4erPtAAPYelxgClY/hpyJl9kIGgN4t+Sh41Jw/1V0phDIoJb3W+9FzVw0rF5QdIGL7n6HvJk1caBxtDo3Qb8pcsLRaGtJ1oUAOntSYYnUHkjI6AAAA",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "tal",
+  "quelle": "website/mediathek/225849_P1215859-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-bach": {
+  "f": {
+   "l": [
+    "dv-bach-l.webp",
+    1700,
+    956
+   ],
+   "s": [
+    "dv-bach-s.webp",
+    820,
+    461
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAwCdASocABAAPv1orE8rJiQiMAgBYB+JZgAAB+8KhL8QAP2LLEByRMIA2mfn53yaq/nRPPKXtDtg/4hRQG1h/az//vVRqxsAq3BsuarNU1tDPCbQESF9+b1Axk9MCAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "bach",
+  "quelle": "website/mediathek/225157_Design-ohne-Titel-19.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-kamin": {
+  "f": {
+   "l": [
+    "dv-kamin-l.webp",
+    1700,
+    1134
+   ],
+   "s": [
+    "dv-kamin-s.webp",
+    820,
+    547
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAAAwBQCdASocABMAPv1ysFIrJqSiqAqpYB+JYgCw7BE76rjBM/cKysGWmnDwp/ww+S3dAADLMmtOnBPXQcniLg8cofcxXG1vo1posSFRObKi2SJUFrl6dCliCIjOxoNcD51gX8wSdxfmjSxmAEfh2q9NNcf8oDBMHgaQZOp4wU5FvWSuck0x7i+0eSpZQ4eyRUSO9vAA",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "kamin",
+  "quelle": "website/mediathek/226431_23-gts_waldhotel_doldenhorn_Adrian_Ehrbar_Photography-scaled.jpeg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-pass": {
+  "f": {
+   "l": [
+    "dv-pass-l.webp",
+    1618,
+    1080
+   ],
+   "s": [
+    "dv-pass-s.webp",
+    820,
+    547
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAABQBQCdASocABMAPv1urVArJqQisBgIAWAfiWcAxNssAIhPrbfkAkpJQY2T60yga19SlgAA/WhDhmHIrqkx8jpX0mmKsK3R87ukQyYG6jkiPd+mEnTmtmiVYZZPOg3g7kLC1oY7b2ZV/cqQmOX6FQ6EWRkJJVhpOS8i0tEkprn0fGie5T4G0wAA",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "pass",
+  "quelle": "doldenhorn/extern/booking/booking-50376425.jpg",
+  "rechte": "Booking.com, vom Haus eingestellt"
+ },
+ "dv-weinkeller": {
+  "f": {
+   "l": [
+    "dv-weinkeller-l.webp",
+    1700,
+    1700
+   ],
+   "s": [
+    "dv-weinkeller-s.webp",
+    820,
+    820
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAACwBQCdASocABwAPv10sFOrJqQiqAgBYB+JQBdmX3AgsHyioffzcpNJ5A7uhr9fos3no3FS+4AA/mxkEC6nYKo2J4BJPzD+M6GDhQgPVOcAdFeTMkYO02vMPS6D/gXJXdpby/jUUF4H49Al8ps20ByN4GBxh0WVCJeNKa6H9AAeXL0JwXhIM6pdaLTr7J1FXXfuAH2BnxS0GI1ou0PDPQ3Yex5ytssu/cSO7CdyxDZxjgwG3lRk6+rszKNSgAAA",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "weinkeller",
+  "quelle": "website/mediathek/226598_Doldenhorn_Weinkeller_Detail_Voll-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-feuer": {
+  "f": {
+   "l": [
+    "dv-feuer-l.webp",
+    1700,
+    896
+   ],
+   "s": [
+    "dv-feuer-s.webp",
+    820,
+    432
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAACQBACdASocAA8APv1orE6rJiQiMAgBYB+JagCdMoRwACnJtHKRY+xErgTUEAAA/uyWoDk468StswM9dZffe7yMxTUYgIOo5zgnwpJtUH81TewkJL09P+Pp8bEcrHaXk6AZcQBTP8a4fqJibyztBkdubQMAAA==",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "feuer",
+  "quelle": "website/mediathek/226386_Video-Biistro.00_00_05_18.Standbild002-1-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-arvengang": {
+  "f": {
+   "l": [
+    "dv-arvengang-l.webp",
+    1700,
+    1134
+   ],
+   "s": [
+    "dv-arvengang-s.webp",
+    820,
+    547
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAACQBQCdASocABMAPv1qrlCrJaQisBgIAWAfiWQAtsgOn0eLNL+I9uVfka5RsQ3WZF28fdRPAAD78Uo8kihupssNO6TR+MPXQk9QLOHoTxPnmYc301kHg173gJKanTJvzNxs7JS3bEr1ssFFjf+uHwFE6xM9E3GTQpRPucIAAAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "arvengang",
+  "quelle": "website/mediathek/225759_P1215507-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-eisgrotte": {
+  "f": {
+   "l": [
+    "dv-eisgrotte-l.webp",
+    1700,
+    1134
+   ],
+   "s": [
+    "dv-eisgrotte-s.webp",
+    820,
+    547
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAADQBACdASocABMAPv1srU6rJiQiMAgBYB+JQBWAA4U1D9lhvbGtRcCduADh7g4ugAD+uwaQrfXMDtVbehD4LWeeMPgLn5o2emYM6kpfHmCQ0i0+aACIPQCkiHaQEDvBBgzsyngjIvLGBcSvgjYQTsyEZdiR4Ud69pseUZmfPElX3wpYuAAAAA==",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "eisgrotte",
+  "quelle": "website/mediathek/226399_Waldhotel_Doldenhorn_SPA_13.12.23_BG_mini_500_4-scaled.webp",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-ruhe": {
+  "f": {
+   "l": [
+    "dv-ruhe-l.webp",
+    1700,
+    1141
+   ],
+   "s": [
+    "dv-ruhe-s.webp",
+    820,
+    550
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAQBQCdASocABMAPvFmqU6ppaQiMAwBMB4JYwCw7CFseGbunvvfthcjQ3s3bsrHHDCAAP7nNd3qrTGIPiLUVTWj3V/BDoAYw2BbQS+fpDjyQr0hib80GBfRG2zofxIguq2Y5E3wYTdFJHpKpNkDcKIAAAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "ruhe",
+  "quelle": "website/mediathek/226401_Waldhotel_Doldenhorn_SPA_13.12.23_BG_mini_500_6-scaled.webp",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-z-junior-5": {
+  "f": {
+   "l": [
+    "dv-z-junior-5-l.webp",
+    1700,
+    956
+   ],
+   "s": [
+    "dv-z-junior-5-s.webp",
+    820,
+    461
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAABQBACdASocABAAPv1qrE6rJiQiMAgBYB+JYwCo9CHf5OHWcWujv3LzlvVIAP7X9aluCqqEyRRt0tQwfCueQ+kyl6Z0I4hhx3Nr80Iqfz7HiPe/rhVW4SI5xxxFFhCy6Jve4WpjeVi1eYm36foTA6DDUhHooTg6NOQiAAAA",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "z-junior-5",
+  "quelle": "website/mediathek/226494_Waldhotel_Doldenhorn_Junior_Suite_Aussicht-Balkon-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-z-suite-4": {
+  "f": {
+   "l": [
+    "dv-z-suite-4-l.webp",
+    1700,
+    1134
+   ],
+   "s": [
+    "dv-z-suite-4-s.webp",
+    820,
+    547
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAADwBACdASocABMAPv1wsFCrJqSisBgIAWAfiWUAxnwR9JBlYzctHIo2iBRzJTMlWwAA/cNOi+7Ppw4V3TanWi6N+7nMRKmmayGy4LuawSperM/+uo690fenpTmx7afsu73M6cF5f8twThVzU9ZY6ZZ+tq+wipv3bMD6Pe85aDF9G0UAAAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "z-suite-4",
+  "quelle": "website/mediathek/226506_Waldhotel_Doldenhorn_Suite_Aussicht_Fenster_Voll-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-z-suite-1": {
+  "f": {
+   "l": [
+    "dv-z-suite-1-l.webp",
+    1700,
+    1141
+   ],
+   "s": [
+    "dv-z-suite-1-s.webp",
+    820,
+    550
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAADQBACdASocABMAPv1qrlCrJaQisBgIAWAfiUATploYNMyTiPJ/fV3MVjXpxD4jeAD4xw5y+MDpn2x3NlavBOfUQ3y6t+RfQe2dC3qkMhdds8N0oYYWAgacazmqh9ZMICH7GLzoZPpVAVwHVWSM4SvAqo+QNTQro97hMkd7/E3jet06zDY5qiicwjA+Sm+oCGWOGyk3AAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "z-suite-1",
+  "quelle": "website/mediathek/226503_Waldhotel_Doldenhorn_Suite_Uebersicht_Voll-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-z-junior-2": {
+  "f": {
+   "l": [
+    "dv-z-junior-2-l.webp",
+    1700,
+    956
+   ],
+   "s": [
+    "dv-z-junior-2-s.webp",
+    820,
+    461
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAAAQBACdASocABAAPv1oq06rJaOiMAgBYB+JZACdABukbEMw3DWWGvQRAAD+zP7M1iYYpphz/V/h47ZTba5KyRJh1+uSOOtATXK2Qf0z3IJb3tN6wHPp1V1INcwHJL2jt473bjc0g85JaEs2BywAQYTtsDgLiJIyPlBDq6+zeLqMZ7ata52Te9PvNqwAAA==",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "z-junior-2",
+  "quelle": "website/mediathek/225496_Waldhotel-Doldenhorn-Junior-Suite-2.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-auftakt": {
+  "f": {
+   "l": [
+    "dv-auftakt-l.webp",
+    1700,
+    861
+   ],
+   "s": [
+    "dv-auftakt-s.webp",
+    820,
+    415
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACQAwCdASocAA4ALsF+v1+jqysrCwDASygF2AHnyMElLnx2/BQ6AP7lN++C7ovvIjTbiFLhn0X5PB3BqaAyc4kVnZ3DrodRxQF3Y6IcZeAAAA==",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "auftakt",
+  "quelle": "website/mediathek/225766_DJI_0530-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-haus-wiese": {
+  "f": {
+   "l": [
+    "dv-haus-wiese-l.webp",
+    1680,
+    944
+   ],
+   "s": [
+    "dv-haus-wiese-s.webp",
+    820,
+    461
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADQAwCdASocABAAPv1orE6rJiQiMAgBYB+JaAAASEpH9cB7VXYz0yAA/uwLOCuB2Kuhvi9moaIyF7ZlbE31YfqrQkxjoTuM8KXaDgyu6rlAXQ5VABxHGi9aB6uSkxDWttniKkA6oiYF2QiqLWqPQoLusAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "haus-wiese",
+  "quelle": "doldenhorn/extern/booking/booking-734676142.jpg",
+  "rechte": "Booking.com, vom Haus eingestellt"
+ },
+ "dv-luft-tal": {
+  "f": {
+   "l": [
+    "dv-luft-tal-l.webp",
+    1700,
+    1134
+   ],
+   "s": [
+    "dv-luft-tal-s.webp",
+    820,
+    547
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAADQBACdASocABMAPvFmqk6ppaQiMAwBMB4JZgC7ACIj+k4KxuS7fJwUr9y+rPPHgAD+MBPkSaDZzNAPEf3Cu10xH3FzQuSmPwryhBjjEGIznXrw+fd371Wu/+XK6eJGIK08H7tqmuYcUDwUH5cSNlImqCorz0aSjQZdTAAA",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "luft-tal",
+  "quelle": "website/mediathek/225754_DJI_0491-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-fenster-wiese": {
+  "f": {
+   "l": [
+    "dv-fenster-wiese-l.webp",
+    1700,
+    1134
+   ],
+   "s": [
+    "dv-fenster-wiese-s.webp",
+    820,
+    547
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAABQBACdASocABMAPv1mqk6rJSOiMAgBYB+JQBgbhH9YdtQCiyPg5ep+tYf8AP7u1kFy4aUQiVoQa1mVkB2XhOPJ7EzGY9gARCQj8HPcCmdsne8jkfebm8Opdl2S9Kh67X/Z4AAA",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "fenster-wiese",
+  "quelle": "website/mediathek/225757_P1215882-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-salon-bleu": {
+  "f": {
+   "l": [
+    "dv-salon-bleu-l.webp",
+    1700,
+    1129
+   ],
+   "s": [
+    "dv-salon-bleu-s.webp",
+    820,
+    545
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAABwBQCdASocABMAPv1wrlArJqQisBgIAWAfiWQAnTNfQVhQhYV7mHkbvRki1WKj3tlkRdXAAP7ZXAbeBMH8Qj0h3T5JoNcOs+AalU4/N2HPV1QDOrXZ6TlW6pauDJbzwmPpnTClmGj5Rw7JR4KEBavwOQCtAKNIomoHotZwAJHqLHMCOhFEIwih2m2xFC9tXv8P0fAnAqAAAA==",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "salon-bleu",
+  "quelle": "doldenhorn/extern/myswitzerland/myswitzerland-00035529_m.jpg",
+  "rechte": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert"
+ },
+ "dv-halle": {
+  "f": {
+   "l": [
+    "dv-halle-l.webp",
+    1700,
+    1134
+   ],
+   "s": [
+    "dv-halle-s.webp",
+    820,
+    547
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAABQBQCdASocABMAPv1ysFIrJqSiqAqpYB+JZAC7AA5GAhCDeHTz4MlpYZ4E0w+nGm+S5gAA/r40NbJkmJSLjyTzJqipQ+vrxwvOrTje5YlTB4+6T9DWpeFLw1+tRC5ph0Ar4/+qU3Y8pQlmvXr0Nn7cmuMZ6jgf0j/4s9deSoxgJCBux3E5s9WQAEguAAAA",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "halle",
+  "quelle": "doldenhorn/extern/myswitzerland/myswitzerland-00035507_m.jpg",
+  "rechte": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert"
+ },
+ "dv-becken": {
+  "f": {
+   "l": [
+    "dv-becken-l.webp",
+    1700,
+    1141
+   ],
+   "s": [
+    "dv-becken-s.webp",
+    820,
+    550
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAACwBQCdASocABMAPv1wsFGrJiSiqAqpYB+JbACdMuN+J3+Fz/0GDicQStbUiJYhxEyHaVObtegA/pezPcT00NLv0S0hHVwNl0nrfVMcIrdeyXYE64T2P4TTZ89w0wiLSA4THeUFbMVxUbC7Bd2w236pH/CHgYs+cM61N4XoKv+fNCDqtWdhsB2AAAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "becken",
+  "quelle": "website/mediathek/225058_YZ6V5592-1.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-bad": {
+  "f": {
+   "l": [
+    "dv-bad-l.webp",
+    1700,
+    1134
+   ],
+   "s": [
+    "dv-bad-s.webp",
+    820,
+    547
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAACQBACdASocABMAPv1srFCrJaQisBgIAWAfiWIAgeEBG+2NPo99t7PLdYX8PAAA+0Nb9kPGRGeL8s15L8f26QnhJVjjQw7P1ij66yncLyFVMWr+NNof1WOSOC8t1Km8Klii+iSe2bNR7ibSs7jAXBeRSGMxsDgQZG556XhfwT0vGZ/+nvb10WuQgYj9KOShg7iYTB3lr1KYAAAA",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "bad",
+  "quelle": "website/mediathek/225071_P1204293-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-salzarium": {
+  "f": {
+   "l": [
+    "dv-salzarium-l.webp",
+    1700,
+    1132
+   ],
+   "s": [
+    "dv-salzarium-s.webp",
+    820,
+    546
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAABQBACdASocABMAPv1wsFGrJiSiqAqpYB+JZACzgAbk8y95P92pfVe5tBwgAP43e3i64XVh4APivmbGe3tNv4r++lcUNq/dnsRka8olUlrbfq/XODW7qbkW/4W/4NQhu1LFo5d33TSS+Ebia6igUbYXsMQaYHojIKtX3VJ5mVnCdpZlAAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "salzarium",
+  "quelle": "website/mediathek/225167_Salzarium_2-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-tisch": {
+  "f": {
+   "l": [
+    "dv-tisch-l.webp",
+    1700,
+    1134
+   ],
+   "s": [
+    "dv-tisch-s.webp",
+    820,
+    547
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAAAwBQCdASocABMAPv1osFErJaSisBgIAWAfiWMAnQAQrReeb05/mgtrNxWVmGnLjmYJQAD+3FhUlk7AVZp+9m1JAmu9A1rZJLr9JEWFKwUjYR+97do8kHYKqHW5ahac0k0ZTVfZCKwVmBNXXb4ORVuknub2r0ZMn6veSycMc5ZEl0NS547Pa+OarXWVwGPvMrSQAA==",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "tisch",
+  "quelle": "doldenhorn/extern/myswitzerland/myswitzerland-00035527_m.jpg",
+  "rechte": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert"
+ },
+ "dv-haus-abend": {
+  "f": {
+   "l": [
+    "dv-haus-abend-l.webp",
+    1700,
+    1134
+   ],
+   "s": [
+    "dv-haus-abend-s.webp",
+    820,
+    547
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQBQCdASocABMAPv1qr1ErJaQisBgIAWAfiWMAnTNMQaoD4tOxIVjljQqU1a2nPiV8LAAA/uvO3lkqHBMLDtTuDRO8Oe2bCs4xlq1OrR/7RJ1OVmHmm/uIov8/dgfxdn9h4RlUAAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "haus-abend",
+  "quelle": "doldenhorn/extern/myswitzerland/myswitzerland-WEDDING_6d91e11.jpg",
+  "rechte": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert"
+ },
+ "dv-empfang": {
+  "f": {
+   "l": [
+    "dv-empfang-l.webp",
+    1700,
+    956
+   ],
+   "s": [
+    "dv-empfang-s.webp",
+    820,
+    461
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAABQBACdASocABAAPv1qrE8rJiQiMAgBYB+JbACdH8ADCNWXBv2ymy9hbVQAAM4mIdx9yJZGLD7v0elV1oWsMVJKUbqcYTH9VVkOlPD1f8Gs5/3Q05HJK/lAA7aGvnlBpzHnqXT0HbQ3PNddNE/ixn+KSssb5kCcH8cAAA==",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "empfang",
+  "quelle": "website/mediathek/225761_20221106_Waldhotel_Doldenhorn_Brunch_Semninarraeume_23-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-gedeck": {
+  "f": {
+   "l": [
+    "dv-gedeck-l.webp",
+    1700,
+    2550
+   ],
+   "s": [
+    "dv-gedeck-s.webp",
+    820,
+    1230
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABQBQCdASoTABwAPv1orlErJaQisBgIAWAfiWMAqPQOxTm/rGJ9az/HZskw1Wkf5VYgEgAA/loBUoe/rU+3XjxlJZq1E/tLaSNlGxclb8kjmvgJ6R2KKmfQ7V8pnXtaZYkjnLXCB/uHGnQsWizOMf9CGg/c1Hj3zbGt34FYIAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "gedeck",
+  "quelle": "website/mediathek/226610_Doldenhorn_Ambiance_Aussicht_Voll_3-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-sauna": {
+  "f": {
+   "l": [
+    "dv-sauna-l.webp",
+    1700,
+    1134
+   ],
+   "s": [
+    "dv-sauna-s.webp",
+    820,
+    547
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAABwBgCdASocABMAPv1srlCrJaQisBgIAWAfiWYAnTlBUt3oCuoN//QARnN58RZCVXzuctxi7k//sOVKhIAA/tAYKwECU65R3H6JXbnYxKlNmHx9qbIvRrRlTSNqWpTl3pEJWD+dy2qBgQHo4Qk8lXqbuvekxpN1T/vVTFGHFTOtHYK8Aj9sWqtstcPKte23LZtnkeDCctkFk4aN2NH/+joAAAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "sauna",
+  "quelle": "website/mediathek/225067_P1204649-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-fest": {
+  "f": {
+   "l": [
+    "dv-fest-l.webp",
+    1700,
+    1269
+   ],
+   "s": [
+    "dv-fest-s.webp",
+    820,
+    612
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAABwBQCdASocABUAPv1urVArJqQisBgIAWAfiWUAuwAPsIB/DvugqJMpwskLzAnnWxx3p8C4APirAOUvK5jezvqccClo53E5A0XCnW0cD7jz91UYmF4X0YPffps8kIsKQ5UFJfwTFZJcqPN7VKHv/uqn4n5Bh2b9bSLtbhuo6apM/4IjgAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "fest",
+  "quelle": "website/mediathek/225248_Blumen-Hochzeit-selbstgemacht2.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-hochzeit": {
+  "f": {
+   "l": [
+    "dv-hochzeit-l.webp",
+    1700,
+    1269
+   ],
+   "s": [
+    "dv-hochzeit-s.webp",
+    820,
+    612
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAADQBACdASocABUAPv1qrE6rJiQiMAgBYB+JZwDKABwlM9jmlRPes3Di5guq40ANAAD8YeBWLFw3/SQfae0PHB27ZMQz6QVnm1SIeEslLyMuaVSHtHa1baS2323O5R+vXFgvZ4PoOB2dVD0Gfy1H3ylcl+c+w3cjjzd9t1yyjqBBEmVWWj8IAA==",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "hochzeit",
+  "quelle": "website/mediathek/225247_Hochzeit-W-1.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-gruener-saal": {
+  "f": {
+   "l": [
+    "dv-gruener-saal-l.webp",
+    1700,
+    1138
+   ],
+   "s": [
+    "dv-gruener-saal-s.webp",
+    820,
+    549
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAABQBQCdASocABMAPv1ysFIrJqSiqAqpYB+JZACdM0xBQXMAgwB68IynNMsFEQPS8d2sUAAA3lOQJhmHGWcfJFy8N+Ybd1gOEXi7wAF6rnvBnGfU05Sg0zF4I+L9WdHwEA6q3Hzv9IU4HKwY/9xOl/vDuF6TqvKIPGu6TTcz3BHy3qEWalk2/VBx8BqWF4tqclskjBf/wxz/UAQAAAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "gruener-saal",
+  "quelle": "doldenhorn/extern/myswitzerland/myswitzerland-00035528_m.jpg",
+  "rechte": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert"
+ },
+ "dv-chillout": {
+  "f": {
+   "l": [
+    "dv-chillout-l.webp",
+    1700,
+    1141
+   ],
+   "s": [
+    "dv-chillout-s.webp",
+    820,
+    550
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABwBQCdASocABMAPv1srFCrJaQisBgIAWAfiWQAnTLQwYAPnOANlPFo3vyiEyEUO/f6dJCAAOG+1v7h6LxJuR/rij6tA4cJxRNNKQzvctgI1AG48x7PTS8a78AwkYhMfKVtifHm49/QkBfRyvODxusqvYgXUNVizNp0NDJd/DOfgIrVd4qumWcSAAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "chillout",
+  "quelle": "website/mediathek/225727_P1204401-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-massage": {
+  "f": {
+   "l": [
+    "dv-massage-l.webp",
+    1700,
+    1133
+   ],
+   "s": [
+    "dv-massage-s.webp",
+    820,
+    547
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAACQBQCdASocABMAPv1ur1CrJqQisBgIAWAfiWIAnTmNudAEdCf3ypuSU09vqjpOlr15U5tGAAD+2U2uMIqALV+afTRR6YJXEd33IssNDgYny1z7KPgq7/BJGbVmgS/DkaNUSctaBwtn/jbdOJ8AlSzYZ4yOgfw5eU1pd3rFQu1Z3oYyA/Qh1G01cJoIcg7kaBswwLyxR6bwPhTa9njP4eN//YAAAA==",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "massage",
+  "quelle": "website/mediathek/225056_YZ6V4997.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ },
+ "dv-burestube": {
+  "f": {
+   "l": [
+    "dv-burestube-l.webp",
+    1700,
+    1134
+   ],
+   "s": [
+    "dv-burestube-s.webp",
+    820,
+    547
+   ]
+  },
+  "v": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAACQBACdASocABMAPv1wsVGrJiSiqAqpYB+JQBWF9eAMhTEvbsjUwVh4oOHoBgAA30BDX1xMVqvBz2eTFIqnQ8p8XxQYjCuFTDO/KmYxgahox7gXFVlUDmiJyjUQSzmGiWu+sPs+ZcH+5N3IL/xKiCnksLkloYqAj3ZjXv2W6PHruw7AovsRARigAAA=",
+  "haus": "Waldhotel Doldenhorn",
+  "bild": "burestube",
+  "quelle": "website/mediathek/226621_Doldenhorn_Ambiance_Aussicht_Voll_8-scaled.jpg",
+  "rechte": "Website des Hauses, Mediathek"
+ }
+}

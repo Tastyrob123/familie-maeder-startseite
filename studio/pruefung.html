@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="de-CH">
+<head><!--demo-weiche--><script src="/_demo/karte.js"></script><script src="/_demo/shim.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prüfung · Empfang Familie Maeder</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0b131f">
+<link rel="icon" href="/assets/logo/familie-maeder.svg">
+<style>
+/* Prüfung · die Kontrollinstanz des Empfangs. Eine Datei, keine Abhängigkeit: läuft auch, wenn studio.js, studio.css oder der Server nicht mehr wollen.
+   Farben und Schriften wie im Empfang (Nachtblau, Papier, Gold, Caslon). Die Schriften kommen vom Server; fehlen sie, bleibt die Seite lesbar. */
+@font-face{font-family:'Caslon FM';font-style:normal;font-weight:400 700;font-display:swap;src:url('/assets/fonts/librecaslon-700.woff2') format('woff2')}
+@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:400 600;font-display:swap;src:url('/assets/fonts/InstrumentSans-normal-400_600.woff2') format('woff2')}
+@font-face{font-family:'DM Mono';font-style:normal;font-weight:400 500;font-display:swap;src:url('/assets/fonts/DMMono-normal-500.woff2') format('woff2')}
+:root{--nacht:#0b131f;--blau:#16263b;--karte:#101c2c;--stahl:#3d5370;--gold:#b89850;--hellgold:#e3d2a6;--papier:#f2ece1;--blatt:#fbf8f1;--tinte:#0f1620;--leise:#6b6456;--linie:rgba(15,22,32,.11);
+  --gruen:#2f6b4f;--warn:#b8862a;--fehl:#a33a2a;--titel:'Caslon FM',Georgia,'Times New Roman',serif;--sans:'Instrument Sans',system-ui,-apple-system,'Segoe UI',sans-serif;--mono:'DM Mono',ui-monospace,'SF Mono',Menlo,monospace;--e2:cubic-bezier(.32,.72,0,1)}
+*,*::before,*::after{box-sizing:border-box}
+html{background:var(--nacht)}
+body{margin:0;background:var(--nacht);color:var(--tinte);font-family:var(--sans);font-size:15.5px;line-height:1.55;-webkit-font-smoothing:antialiased;min-height:100vh}
+button,input{font:inherit;color:inherit}
+button{background:none;border:0;padding:0;cursor:pointer}
+h1,h2,h3,p,ul,ol{margin:0;padding:0}
+ul,ol{list-style:none}
+a{color:inherit;text-decoration:none}
+[hidden]{display:none!important}
+:focus-visible{outline:1.5px solid var(--gold);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--titel);font-weight:700;letter-spacing:-.005em}
+em{font-style:normal;color:var(--stahl)}
+.mono{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase}
+.leise{color:var(--leise)}
+.kn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:44px;padding:0 22px;border-radius:999px;white-space:nowrap;font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--papier);
+  background:linear-gradient(#27405f,#1a2b42 55%,#0f1b2b);box-shadow:inset 0 1px 0 #5a7396,inset 0 -2px 0 #060b13,0 12px 22px -12px rgba(15,22,32,.7);transition:transform .5s var(--e2),opacity .3s}
+.kn:hover{transform:translateY(-2px)}.kn:active{transform:translateY(1px) scale(.985)}.kn[disabled]{opacity:.38;pointer-events:none}
+.kn--linie{background:none;color:inherit;box-shadow:inset 0 0 0 1px currentColor;opacity:.78}.kn--linie:hover{opacity:1}
+.kn--klein{height:36px;padding:0 16px;font-size:10px}
+.link{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise);border-bottom:1px solid currentColor;padding-bottom:2px;transition:color .3s}.link:hover{color:var(--tinte)}
+.hinweis{font-size:13.5px;line-height:1.5;color:rgba(15,22,32,.74);background:rgba(184,152,80,.12);border-radius:12px;padding:10px 14px}
+
+.kopf{color:#fff;padding:34px clamp(20px,4vw,56px) 0;max-width:980px;margin:0 auto;display:flex;gap:22px;align-items:flex-end;flex-wrap:wrap;justify-content:space-between}
+.kopf__l{display:flex;gap:18px;align-items:center}
+.kopf__z{width:42px;height:48px;color:var(--gold);flex:none}.kopf__z svg{width:100%;height:100%;fill:currentColor}
+.kopf h1{font-size:clamp(2rem,4vw,3rem);line-height:1.04}.kopf h1 em{color:var(--hellgold)}
+.kopf p{margin-top:6px;color:rgba(255,255,255,.66);font-size:14.5px;max-width:52ch}
+.kopf__r{display:flex;gap:10px;flex-wrap:wrap;align-items:center;color:#fff}
+.kopf__r .kn--linie{color:#fff}
+.in{max-width:980px;margin:0 auto;padding:26px clamp(20px,4vw,56px) 110px;display:grid;gap:20px}
+.blatt{background:var(--blatt);border-radius:22px;box-shadow:inset 0 0 0 1px var(--linie);padding:24px 26px}
+.ampel{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;background:var(--papier)}
+.ampel__l{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;color:#fff;background:var(--stahl);box-shadow:inset 0 -3px 0 rgba(0,0,0,.25),0 14px 26px -14px rgba(0,0,0,.6);transition:background .5s}
+.ampel__l svg{width:30px;height:30px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ampel.ok .ampel__l{background:var(--gruen)}.ampel.warn .ampel__l{background:var(--warn)}.ampel.fehl .ampel__l{background:var(--fehl)}
+.ampel.lauf .ampel__l svg{animation:dreh 1.2s linear infinite}
+@keyframes dreh{to{transform:rotate(360deg)}}
+.ampel h2{font-size:1.9rem;line-height:1.1}
+.ampel p{margin-top:6px;color:rgba(15,22,32,.72);font-size:14.5px}
+.ampel__kn{grid-column:1/-1;display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.zw{font-size:1.45rem;line-height:1.1;margin:10px 0 2px;display:flex;align-items:baseline;gap:12px;color:#fff}
+.zw span{font-family:var(--mono);font-weight:400;font-size:10.5px;letter-spacing:.14em;color:rgba(255,255,255,.55)}
+.punkte{padding:6px 0}
+.pt{display:grid;grid-template-columns:30px 1fr auto;gap:14px;align-items:start;padding:14px 20px;border-top:1px solid var(--linie)}
+.pt:first-child{border-top:0}
+.pt__z{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;margin-top:1px;color:#fff;background:#c9c2b4}
+.pt__z svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.pt.ok .pt__z{background:var(--gruen)}.pt.warn .pt__z{background:var(--warn)}.pt.fehl .pt__z{background:var(--fehl)}
+.pt.lauf .pt__z{background:#c9c2b4}.pt.lauf .pt__z svg{animation:dreh 1.2s linear infinite}
+.pt b{display:block;font-weight:600;font-size:15px}
+.pt .pt__t{font-size:14px;color:rgba(15,22,32,.74);margin-top:2px;overflow-wrap:anywhere}
+.pt .pt__m{margin-top:10px;display:grid;gap:8px;font-size:13.5px}
+.pt .pt__m p{color:rgba(15,22,32,.8)}
+.pt .pt__m p i{font-style:normal;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise);display:block;margin-bottom:2px}
+.pt .pt__l{font-family:var(--mono);font-size:11px;letter-spacing:.02em;text-transform:none;color:var(--leise);white-space:pre-wrap;overflow-wrap:anywhere;background:#fff;border-radius:10px;padding:8px 10px}
+.pt__r{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.pt__r .kn--linie{color:var(--tinte)}
+.lex{display:grid;gap:0;padding:6px 0}
+.lex__such{display:flex;gap:10px;align-items:center;padding:4px 20px 14px}
+.lex__such input{flex:1;background:#fff;border:0;border-radius:12px;padding:12px 15px;font-size:15px;box-shadow:inset 0 0 0 1px rgba(15,22,32,.14)}
+.lex__such input:focus{outline:0;box-shadow:inset 0 0 0 1.5px var(--tinte)}
+.le{border-top:1px solid var(--linie)}
+.le summary{list-style:none;cursor:pointer;padding:13px 20px;display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center}
+.le summary::-webkit-details-marker{display:none}
+.le summary b{font-weight:600;font-size:15px}
+.le summary small{font-size:13px;color:var(--leise);display:block}
+.le summary i{font-style:normal;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise);white-space:nowrap}
+.le[open] summary i{color:var(--tinte)}
+.le__k{padding:0 20px 16px;display:grid;gap:9px;font-size:14px;color:rgba(15,22,32,.82)}
+.le__k p i{font-style:normal;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise);display:block;margin-bottom:2px}
+.le__k code{font-family:var(--mono);font-size:12px;background:#fff;padding:2px 6px;border-radius:6px}
+.fuss{color:rgba(255,255,255,.5);font-size:12.5px;display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between;padding:0 4px}
+.meldung{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:9;display:grid;gap:8px;max-width:min(560px,calc(100vw - 32px))}
+.meldung div{background:var(--tinte);color:var(--papier);padding:12px 18px;border-radius:14px;font-size:14px;box-shadow:0 18px 40px -16px rgba(0,0,0,.8)}
+.meldung div.f{background:var(--fehl)}
+@media(max-width:700px){.pt{grid-template-columns:26px 1fr}.pt__r{grid-column:2;justify-content:flex-start}.ampel{grid-template-columns:1fr}.ampel__l{width:52px;height:52px}.blatt{padding:18px 16px}.pt,.le summary,.lex__such{padding-left:12px;padding-right:12px}.le__k{padding-left:12px;padding-right:12px}}
+</style>
+<script src="/besuch.js?v=3c4c57a56e" defer></script><script src="/verweil.js?v=5881fd455d" defer></script></head>
+<body>
+<header class="kopf">
+  <div class="kopf__l">
+    <div class="kopf__z" id="zeichen"><svg viewBox="0 0 48 56"><path d="M24 2 14 20h6l-8 14h24l-8-14h6zM10 14 4 24h4l-5 9h14M38 14l6 10h-4l5 9H31" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M24 34v20M8 33v12M40 33v12" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></div>
+    <div><h1>Prü<em>fung.</em></h1><p>Das Empfang prüft sich selbst: Verbindung, Browser, Server, Daten, Bau und Seite. Diese Seite läuft auch dann, wenn der Rest des Empfangs nicht mehr will.</p></div>
+  </div>
+  <div class="kopf__r"><a class="kn kn--linie kn--klein" href="./">Zurück zum Empfang</a></div>
+</header>
+<main class="in">
+  <section class="blatt ampel lauf" id="ampel">
+    <div class="ampel__l"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9"/></svg></div>
+    <div><h2 id="a-t">Wird <em>geprüft …</em></h2><p id="a-p">Einen Augenblick. Jeder Punkt erscheint, sobald er geprüft ist.</p></div>
+    <div class="ampel__kn"><button class="kn kn--klein" type="button" id="nochmal" disabled>Noch einmal prüfen</button><button class="kn kn--klein kn--linie" type="button" id="bericht" disabled>Bericht kopieren</button><a class="kn kn--klein kn--linie" href="/" target="_blank" rel="noopener">Website ansehen</a></div>
+  </section>
+  <h2 class="zw">Verbindung und Browser<span id="z-c"></span></h2>
+  <section class="blatt punkte" id="c-liste"></section>
+  <h2 class="zw">Server, Daten und Bau<span id="z-s"></span></h2>
+  <section class="blatt punkte" id="s-liste"><div class="pt lauf"><span class="pt__z"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9"/></svg></span><div><b>Warten auf den Server</b><div class="pt__t">Der Server prüft seine Dateien, baut die Seite einmal zur Probe und meldet sich.</div></div></div></section>
+  <h2 class="zw">Lexikon: alle bekannten Fehlerquellen<span id="z-l"></span></h2>
+  <section class="blatt lex" id="lexikon"><div class="lex__such"><input id="such" type="search" placeholder="Suchen, zum Beispiel „anmelden“, „Bild“, „langsam“ …" aria-label="Im Lexikon suchen"></div><div id="lex-liste"></div></section>
+  <p class="fuss"><span id="f-l">Prüfung des Empfangs</span><span id="f-r"></span></p>
+</main>
+<div class="meldung" id="meldung" aria-live="polite"></div>
+<script>
+(function () {
+'use strict';
+var $ = function (s, r) { return (r || document).querySelector(s); };
+var h = function (s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+var SVG = { ok: '<svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>', warn: '<svg viewBox="0 0 24 24"><path d="M12 6v7M12 16.5v.5"/></svg>', fehl: '<svg viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg>', lauf: '<svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9"/></svg>' };
+var API = '/studio/api/';
+var ST = null, PROBE = false, ANG = false, SERVER = null, ERG = { c: [], s: [] }, LAEUFT = false;
+
+/* ---------------------------------------------------------------- Das Lexikon: jede Fehlerquelle, die dieses Empfang kennt.
+   Jeder Eintrag: t Titel · was (was geprüft wird / was passiert) · heisst (wenn es rot oder gelb ist) · tun (was die Familie tun kann) · robert (der technische Griff) */
+var LEX = {
+  /* Verbindung und Browser (Prüfung im Browser) */
+  'c-netz': { t: 'Internet-Verbindung', was: 'Ob der Browser meldet, dass er online ist.', heisst: 'Der Browser ist offline. Nichts im Empfang kann gespeichert werden.', tun: 'WLAN oder Netzkabel prüfen, dann „Noch einmal prüfen“.', robert: 'navigator.onLine war false.' },
+  'c-status': { t: 'Der Server des Empfangs antwortet', was: 'Ob unter dieser Adresse das Empfang läuft (und nicht nur ein einfacher Dateiserver oder gar nichts).', heisst: 'Rot heisst: Der Server ist nicht erreichbar oder er ist nicht das Empfang. Dann zeigt das Empfang „Keine Verbindung zum Empfang“, und nichts lässt sich ändern.', tun: 'Ist das Empfang lokal: Den Server des Empfangs starten (siehe „Server des Empfangs starten“ im Lexikon). Ist es online: ein paar Minuten warten und neu laden; bleibt es rot, Robert Bescheid sagen.', robert: 'Lokal: im Projektordner python3 studio.py 8925 (nicht serve.py, der liefert nur Dateien und kennt /studio/api/ nicht). Online: Vercel-Funktion api/probe.py, Umleitungen in vercel.json, Logs im Vercel-Dashboard.' },
+  'c-server': { t: 'Die Prüfung des Servers', was: 'Ob der Server seine eigene Prüfliste liefern kann (Dateien, Daten, Bau, Seite).', heisst: 'Der Server antwortet, aber die Prüfliste kommt nicht. Meist ist der Server dann gerade blockiert oder eine Datei des Empfangs ist beschädigt.', tun: 'Eine Minute warten, „Noch einmal prüfen“. Bleibt es rot: Robert Bescheid sagen, mit dem kopierten Bericht.', robert: 'GET /studio/api/pruefung. Antwort 500 → DATEN/fehler.log lesen. Zeitüberschreitung → ein Bau hängt (SCHLOSS), Server neu starten.' },
+  'c-stand': { t: 'Die Inhalte des Empfangs laden', was: 'Ob der Server den Überblick liefert, aus dem jede Ansicht des Empfangs gebaut wird (Häuser, Angaben, Texte, Bilder, Änderungen).', heisst: 'Rot: Das Empfang öffnet sich nicht oder bleibt leer. Gelb: nicht angemeldet, deshalb nicht geprüft.', tun: 'Anmelden und noch einmal prüfen. Bleibt es rot, meist ist der Bau der Seite gescheitert, siehe „Bau von Entwurf und Vergleich“.', robert: 'GET /studio/api/stand → ueberblick(). Meldet fehler, wenn GEBAUT["fehler"] gesetzt ist. Ursache fast immer in bau.py oder inhalt.py (Syntax, geänderte Datenform).' },
+  'c-studiojs': { t: 'Das Werkzeug selbst (studio.js)', was: 'Ob die Datei mit der Oberfläche des Empfangs vollständig ankommt und sich lesen lässt.', heisst: 'Die Datei fehlt, ist abgeschnitten oder enthält einen Schreibfehler. Das Empfang bleibt dann dunkel oder zeigt gar nichts.', tun: 'Seite neu laden (bei gedrückter Umschalttaste). Bleibt es rot: Robert Bescheid sagen.', robert: 'studio/studio.js wird mit new Function() auf Lesbarkeit geprüft. Nach einer Änderung: node --check studio/studio.js. Online: liegt die Datei im Online-Ordner? (_studio/online.py kopiert studio/ ganz.)' },
+  'c-studiocss': { t: 'Die Gestaltung (studio.css)', was: 'Ob die Stildatei des Empfangs ankommt.', heisst: 'Ohne sie ist das Empfang ein nackter Text ohne Aufbau. Es funktioniert, sieht aber falsch aus.', tun: 'Seite neu laden. Bleibt es rot: Robert Bescheid sagen.', robert: 'studio/studio.css fehlt oder enthält kein :root. Online-Ordner prüfen.' },
+  'c-assets': { t: 'Dateien der Website (Stil, Zeichen)', was: 'Ob das Stylesheet und das Zeichen der Website erreichbar sind. Der Entwurf und der Vergleich zeigen die Seite damit.', heisst: 'Der Entwurf im Empfang wirkt dann kahl oder zeigt keine Bilder.', tun: 'Neu laden. Bleibt es rot: Robert Bescheid sagen.', robert: 'assets/css/main.css und assets/logo/familie-maeder.svg. Lokal: liegen sie im Projekt? Online: Zusatz-Projekte und rewrites in vercel.json (online.py stell).' },
+  'c-schrift': { t: 'Die Schrift der Familie', was: 'Ob die Titelschrift (Libre Caslon) geladen wird.', heisst: 'Nur ein Schönheitsfehler: Das Empfang zeigt eine Ersatzschrift.', tun: 'Nichts nötig. Beim nächsten Laden ist sie meist da.', robert: 'assets/fonts/librecaslon-700.woff2 (HEAD-Abruf).' },
+  'c-entwurf': { t: 'Der Entwurf ist abrufbar', was: 'Ob die Seite mit den noch nicht veröffentlichten Änderungen vom Server kommt und die Kennzeichen trägt, über die das Empfang Texte und Bilder findet.', heisst: 'Rot: „Seiten & Texte“ und der Vergleich zeigen nichts. Gelb: nicht angemeldet, deshalb nicht geprüft.', tun: 'Anmelden, dann noch einmal prüfen. Bleibt es rot: „Entwurf und Vergleich neu bauen“ unter „Bau“.', robert: 'GET /entwurf/index.html (403 ohne Anmeldung). Muss data-e="…" enthalten (FM_MARKEN=1). Fehlt es: inhalt.fertig() läuft nicht, I.fertig in bau.py schreibe() prüfen.' },
+  'c-vorher': { t: 'Der Vergleichs-Stand ist abrufbar', was: 'Ob die veröffentlichte Seite mit Kennzeichen (für „Vorher/Nachher“) vom Server kommt.', heisst: 'Der Vergleich zeigt links nichts.', tun: 'Noch einmal prüfen, sonst „Entwurf und Vergleich neu bauen“.', robert: 'GET /vorher/index.html.' },
+  'c-rahmen': { t: 'Die Seite lässt sich im Empfang öffnen', was: 'Ob sich der Entwurf in einem Fenster innerhalb des Empfangs öffnet und das Empfang hineingreifen kann. Darauf beruht „Seiten & Texte“: Klick auf einen Text, gold umrandet, rechts ändern.', heisst: 'In „Seiten & Texte“ wird nichts gold umrandet, Klicks tun nichts.', tun: 'Einen anderen Browser versuchen (Safari, Chrome, Firefox). Erweiterungen, die Inhalte blocken, für diese Adresse ausschalten.', robert: 'iframe auf /entwurf/index.html?nomotion, contentDocument.querySelector("[data-e]"). Scheitert bei fremder Herkunft (andere Domain/Port für Empfang und Seite), bei CSP/X-Frame-Options oder wenn der Entwurf keine Kennzeichen trägt.' },
+  'c-live': { t: 'Die veröffentlichte Seite', was: 'Ob die Website antwortet und frei von Kennzeichen des Entwurfs ist.', heisst: 'Rot mit Kennzeichen: Auf der Website stehen unsichtbare Zeichen oder Hilfsattribute aus dem Empfang. Das kann die Darstellung stören.', tun: '„Veröffentlichte Seite neu bauen“ unter „Server, Daten und Bau“ oder einmal neu veröffentlichen.', robert: 'GET /index.html darf weder U+E000 bis U+E002 noch data-e="…" enthalten. Kommt beides vor, wurde LIVE mit FM_MARKEN=1 gebaut: baue(LIVE, F_STAND, False) prüfen.' },
+  'c-kekse': { t: 'Cookies und Anmeldung im Browser', was: 'Ob der Browser Cookies erlaubt (darin steckt die Anmeldung, in der Probe-Fassung auch Ihr ganzer Probe-Stand) und wie viel Platz sie brauchen.', heisst: 'Ohne Cookies kommt „Bitte anmelden“ immer wieder. In der Probe-Fassung: Werden die Cookies zu gross, nimmt der Server die Anfragen irgendwann nicht mehr an.', tun: 'Cookies für diese Adresse erlauben, kein privates Fenster. Probe-Fassung: „Probe zurücksetzen“ leert Ihren Probe-Stand.', robert: 'Echtes Empfang: Keks fm_studio (HttpOnly, SameSite=Strict, 12 h). Probe: fm_gast + fm_zn + fm_z0…7 (je ≤ 3600 Zeichen, packe() in probe.py). Grenze der Kopfzeilen bei Vercel etwa 16 KB.' },
+  'c-speicher': { t: 'Speicher im Browser', was: 'Ob der Browser kleine Dinge merken darf (zum Beispiel diese Fehlerliste).', heisst: 'Kein Hindernis für das Empfang, nur die Fehlerliste dieser Prüfung bleibt leer.', tun: 'Nichts nötig.', robert: 'localStorage wirft (privates Fenster, blockierte Website-Daten).' },
+  'c-fehler': { t: 'Fehler, die das Empfang zuletzt im Browser hatte', was: 'Das Empfang schreibt jeden Fehler, der in der Oberfläche passiert, in eine kleine Liste. Hier steht, ob etwas drin ist.', heisst: 'Gelb: In den letzten Sitzungen ist etwas im Browser schiefgegangen. Die Einträge nennen Datei und Zeile.', tun: 'Liste lesen und „Bericht kopieren“ an Robert schicken, dann die Liste leeren.', robert: 'localStorage fm_fehler, gefüllt von window.onerror und unhandledrejection in studio/index.html. Zeile und Datei stehen im Eintrag.' },
+  'c-browser': { t: 'Der Browser ist neu genug', was: 'Ob der Browser die Technik versteht, die das Empfang braucht (ab Safari 14, Chrome 80, Firefox 74, Edge 80).', heisst: 'Das Empfang öffnet sich nicht oder einzelne Knöpfe tun nichts.', tun: 'Browser aktualisieren oder einen anderen nehmen.', robert: 'Geprüft: fetch, AbortController, ResizeObserver, optionale Verkettung (?.), Nullish (??), Intl.' },
+  'c-breite': { t: 'Grösse des Fensters', was: 'Wie breit das Fenster ist.', heisst: 'Unter 360 Pixeln wird das Empfang sehr eng. Es funktioniert, aber Listen und der Seiten-Editor sind unbequem.', tun: 'Für „Seiten & Texte“ und den Vergleich am Rechner oder Tablet arbeiten. Alles andere geht auch am Handy.', robert: 'innerWidth.' },
+  'c-zeit': { t: 'Uhr von Browser und Server', was: 'Ob die Uhren einigermassen gleich gehen. Das Empfang zeigt damit „vor 5 Min.“ und entscheidet, ob ein Hinweis-Band in seinem Zeitraum liegt.', heisst: 'Zeitangaben wie „gespeichert vor …“ stimmen nicht, ein Hinweis-Band kann einen Tag zu früh oder zu spät erscheinen.', tun: 'Datum und Uhrzeit am Gerät prüfen.', robert: 'Abweichung über 5 Minuten zwischen Date.now() und der Server-Zeit (jetzt()).' },
+
+  /* Server, Daten und Bau (Prüfung auf dem Server) */
+  'server': { t: 'Der Server', was: 'Welche Fassung läuft, seit wann, ob als echtes Empfang oder Probe-Fassung.', heisst: '–', tun: '–', robert: 'FASSUNG in studio.py. Nach jeder Änderung am Empfang hochzählen.' },
+  'quellen': { t: 'Die Dateien des Baus', was: 'Ob alles da ist, womit die Seite gebaut wird: bau.py, inhalt.py, das Bild-Verzeichnis, die Zeichen der Häuser, die Tapeten.', heisst: 'Fehlt eine Pflichtdatei, kann keine Seite mehr gebaut werden: kein Entwurf, kein Veröffentlichen. Gelb: Nur die Listen für Vorab-Bilder oder Bildgrössen fehlen, der Bau nimmt dann Ersatzwerte.', tun: 'Robert Bescheid sagen. Die Familie kann hier nichts tun.', robert: 'Pflicht: bau.py, inhalt.py, assets/img/manifest.json, assets/logo/zeichen.json, assets/css/tapeten.css (die letzten beiden schreibt bau.py, solange die vier Haus-Projekte daneben liegen). Online kopiert _studio/online.py genau diese Liste (CODE + DATEN).' },
+  'daten': { t: 'Der Daten-Ordner', was: 'Ob der Ordner, in dem Stand, Entwurf und Verlauf liegen, lesbar und beschreibbar ist.', heisst: 'Nichts lässt sich speichern. Jede Änderung endet mit einer Fehlermeldung.', tun: 'Robert Bescheid sagen.', robert: 'DATEN = FM_DATEN oder <Projekt>/inhalt. Rechte prüfen (ls -la), Platte voll? Online: /tmp/fm (nur Zwischenspeicher).' },
+  'stand': { t: 'Der veröffentlichte Stand (stand.json)', was: 'Ob die Datei mit allem, was die Familie je veröffentlicht hat, lesbar ist.', heisst: 'Rot ist ernst: Das Empfang würde die beschädigte Datei als leer lesen. Ein Veröffentlichen in diesem Zustand setzt die Website auf den Stand vor der ersten Änderung zurück.', tun: 'Nicht veröffentlichen. „Stand aus dem Verlauf zurückholen“ drücken: Das Empfang nimmt die letzte heile Veröffentlichung aus dem Verlauf. Die beschädigte Datei bleibt daneben liegen.', robert: 'inhalt/stand.json. Reparatur legt sie als stand.json.kaputt-<Zeit> beiseite und schreibt verlauf/<neuester>.json[inhalt] zurück. Von Hand: python3 -c "import json;json.load(open(\'inhalt/stand.json\'))".' },
+  'entwurf': { t: 'Der Entwurf (entwurf.json)', was: 'Ob die Datei mit den noch nicht veröffentlichten Änderungen lesbar ist.', heisst: 'Das Empfang würde sie als leer lesen: Alle unveröffentlichten Änderungen wären unsichtbar.', tun: '„Entwurf aus dem Stand neu anlegen“: Der Entwurf beginnt wieder beim veröffentlichten Stand, die beschädigte Datei bleibt daneben liegen.', robert: 'inhalt/entwurf.json. Reparatur: beiseite als .kaputt-<Zeit>, dann Kopie von stand.json, dann frisch(zwang=True).' },
+  'nebendateien': { t: 'Speicherzeiten und Sitzungen', was: 'Zwei kleine Hilfsdateien: wann jede Änderung gespeichert wurde und wer angemeldet ist.', heisst: 'Unwichtig für die Inhalte. „gespeichert vor …“ stimmt dann nicht, oder jeder muss sich neu anmelden.', tun: '„Aufräumen“ legt sie neu an.', robert: 'zeiten.json, sitzungen.json im Daten-Ordner.' },
+  'zugang': { t: 'Zugang und Passwort', was: 'Ob ein Passwort gesetzt ist, ob das Empfang gerade offen ist, ob die Anmeldung gesperrt ist, und ob die Passwort-Datei nur der Server lesen darf.', heisst: 'Gelb „offen“: Jeder mit der Adresse kann ändern und veröffentlichen, bis die Datei „offen“ entfernt ist. Gelb „gesperrt“: Nach fünf falschen Passwörtern ist die Anmeldung 30 Sekunden zu. Rot: Die Passwort-Datei ist beschädigt, niemand kann sich anmelden.', tun: 'Gesperrt: eine halbe Minute warten oder „Sperre aufheben“. Beschädigt oder Passwort vergessen: Robert Bescheid sagen, er legt die Datei beiseite, danach legen Sie beim nächsten Öffnen ein neues Passwort fest.', robert: 'inhalt/zugang.json (salz 32 hex, hash 64 hex, pbkdf2 240000). Vergessen: Datei umbenennen → Tor „neu“. Offen ohne Passwort: touch inhalt/offen (zum Ausliefern wieder löschen). Rechte 0600.' },
+  'bau': { t: 'Bau von Entwurf und Vergleich', was: 'Ob der letzte Bau gelungen ist und ob Entwurf und Vergleich alle Seiten enthalten.', heisst: 'Rot: Der Entwurf lässt sich nicht bauen. Die Übersicht zeigt dann denselben Satz oben. Speichern geht nicht, bis der Bau wieder gelingt.', tun: '„Entwurf und Vergleich neu bauen“. Bleibt es rot, steht im Text, woran der Bau scheitert: Bericht kopieren und Robert schicken.', robert: 'GEBAUT["fehler"] aus baue() (bau.py als Unterprozess, letzte stderr-Zeile). Fast immer: Syntax in bau.py/inhalt.py, fehlende Bilddatei im manifest. Lokal nachstellen: FM_ZIEL=/tmp/x FM_INHALT=inhalt/entwurf.json FM_MARKEN=1 python3 bau.py' },
+  'probebau': { t: 'Probebau', was: 'Die Prüfung baut die Seite einmal frisch in einen Nebenordner und prüft: alle Seiten da, Verzeichnis der Stellen da, keine unsichtbaren Kennzeichen übrig.', heisst: 'Rot: Mit den aktuellen Dateien lässt sich keine vollständige Seite bauen. Das trifft das nächste Speichern und Veröffentlichen.', tun: 'Bericht kopieren, Robert schicken. Nicht veröffentlichen, bis es grün ist.', robert: 'baue(tmp, F_ENTWURF, True). Fehlen Seiten: bau.py schreibt sie nicht (Ausnahme in einer Seitenfunktion). Kennzeichen übrig: I.fertig() wird für eine Seite nicht aufgerufen (schreibe()).' },
+  'live': { t: 'Die veröffentlichte Seite', was: 'Ob alle Seiten der Website da sind und keine Kennzeichen des Entwurfs enthalten.', heisst: 'Rot: Eine Seite fehlt oder trägt Kennzeichen. Gäste sehen eine Lücke oder gestörte Darstellung.', tun: '„Veröffentlichte Seite neu bauen“ (nimmt den gespeicherten Stand, nichts geht verloren).', robert: 'LIVE = FM_LIVE oder Projektordner. baue(LIVE, F_STAND, False). Probe-Fassung: LIVE je Gast, vor dem ersten Veröffentlichen leer, dann 307 zur Online-Seite.' },
+  'bilder': { t: 'Bildverweise', was: 'Ob jedes Foto, das Stand oder Entwurf nennen (getauscht oder hochgeladen), wirklich existiert.', heisst: 'Ein Foto fehlt. Auf der Seite bleibt dort ein leerer Rahmen oder das Ursprungsbild.', tun: '„Bildverweise aufräumen“ nimmt die Verweise auf fehlende Fotos heraus; die Stellen zeigen wieder das ursprüngliche Foto. Danach das Foto bei Bedarf neu hochladen.', robert: 'neu_bilder → assets/img/<key>-l/-s.webp (Startbilder dazu -h). bilder-Tausch → Ziel muss im manifest oder in neu_bilder sein. Dateien gehen verloren, wenn assets/img aus einer Sicherung zurückgespielt wird. Probe: nur Namen geprüft, keine Dateien.' },
+  'haeuser': { t: 'Die vier Häuser', was: 'Ob die Liste der Häuser im Entwurf nur Häuser nennt, die die Seite kennt, und wie sie geordnet ist.', heisst: 'Rot: In der Liste steht ein Haus, das es auf der Seite nicht gibt, oder gar keines mehr. Gelb: Ein Haus ist im Empfang herausgenommen und steht nicht auf der Seite.', tun: '„Häuser auf den Stand der Seite setzen“ holt die vier Häuser in ihrer ursprünglichen Reihenfolge zurück.', robert: 'listen.haeuser in entwurf.json, Schlüssel k aus HAUS_VON_KEY. Reparatur haeuser-standard.' },
+  'zahlen': { t: 'Die Zählung', was: 'Ob die kleine Zählung antwortet, die festhält, welches Haus Gäste wählen und wie oft gebucht wird.', heisst: 'Gelb: Die Zählung antwortet nicht. Der Bereich „Zahlen“ bleibt leer, alles andere geht.', tun: 'Neu laden. Bleibt es gelb: Robert Bescheid sagen.', robert: 'GET /api/zahlen → serve.zahlen_get (lokal _dienste/zahlen.jsonl, online api/zahlen.js mit Blob-Speicher).' },
+  'texte': { t: 'Geänderte Texte und ihre Stellen', was: 'Ob jeder im Empfang geänderte Text noch eine Stelle auf der Seite hat.', heisst: 'Gelb: Ein geänderter Text hat keine Stelle mehr, weil die Seite an der Stelle umgebaut wurde. Er wirkt nicht und steht als „verwaist“ unter Änderungen.', tun: '„Wirkungslose Texte entfernen“. Dann die Stelle in „Seiten & Texte“ neu anklicken und den Text noch einmal eintragen.', robert: 'texte[].h = Fingerabdruck der Stelle (_kern). Ändert ein Chat den Originaltext in bau.py, ändert sich der Fingerabdruck, die Kunden-Änderung verliert ihre Stelle (_studio.json verwaist).' },
+  'verlauf': { t: 'Der Verlauf', was: 'Ob jeder gespeicherte Stand im Verlauf lesbar ist.', heisst: 'Ein Eintrag ist beschädigt und lässt sich nicht zurückholen.', tun: '„Verlauf aufräumen“ legt beschädigte Einträge beiseite.', robert: 'inhalt/verlauf/<Zeit>.json, 0000-anfang.json = Stand vor der ersten Änderung.' },
+  'aenderungen': { t: 'Der Vergleich Stand gegen Entwurf', was: 'Ob das Empfang ausrechnen kann, was sich geändert hat (die Liste unter „Änderungen“ und die Leiste unten).', heisst: 'Rot: Die Liste der Änderungen lässt sich nicht bilden. Dann bleibt das Empfang nach dem Öffnen leer.', tun: 'Bericht kopieren und Robert schicken.', robert: 'aenderungen() in studio.py wirft. Meist eine unerwartete Datenform in stand/entwurf (z. B. Liste statt Wörterbuch). DATEN/fehler.log hat den Stapel.' },
+  'bildwerkzeug': { t: 'Das Bildwerkzeug', was: 'Ob der Server Fotos und Zeichen umrechnen kann (dafür braucht er Pillow und NumPy).', heisst: 'Fotos und Zeichen lassen sich nicht hochladen. Alles andere geht.', tun: 'Robert Bescheid sagen.', robert: 'python3 -m pip install pillow numpy. Probe-Fassung braucht es nicht.' },
+  'platz': { t: 'Platz auf der Platte', was: 'Wie viel Platz der Server noch hat.', heisst: 'Unter 50 MB scheitert Speichern und Veröffentlichen.', tun: 'Robert Bescheid sagen.', robert: 'shutil.disk_usage(DATEN).' },
+  'schloss': { t: 'Das Empfang ist nicht blockiert', was: 'Ob das Empfang innerhalb von drei Sekunden an seine Daten kommt. Während eines Baus oder einer Veröffentlichung ist es kurz zu.', heisst: 'Rot: Ein Bau oder eine Veröffentlichung hängt. Speichern wartet dann endlos.', tun: 'Eine Minute warten, „Noch einmal prüfen“. Bleibt es rot: Robert Bescheid sagen (Server neu starten).', robert: 'SCHLOSS (RLock) in studio.py. Hängender Unterprozess bau.py (Timeout 180 s), danach frei. Sonst Server neu starten.' },
+  'fehlerlog': { t: 'Fehlerprotokoll des Servers', was: 'Ob der Server unerwartete Fehler aufgezeichnet hat.', heisst: 'Gelb: In den letzten 24 Stunden ist etwas Unerwartetes passiert. Die letzten Einträge stehen hier, mit Zeit und Ort.', tun: 'Bericht kopieren und Robert schicken. „Protokoll leeren“, sobald es angesehen ist.', robert: 'DATEN/fehler.log (melde_fehler, hält sich unter 200 KB).' },
+  'probe': { t: 'Probe-Fassung: Zwischenspeicher', was: 'Ob der Zwischenspeicher der Probe-Fassung beschreibbar ist und wie viele Besucher gerade Platz haben.', heisst: 'Die Probe-Fassung kann nichts bauen.', tun: 'Neu laden. Bleibt es rot: Robert Bescheid sagen.', robert: '/tmp/fm auf Vercel; HOECHSTENS=6 Gäste je Maschine, danach räumt raeume() die ältesten.' },
+
+  /* Wenn etwas passiert (Erscheinungen, die die Familie bemerkt) */
+  's-verbindung': { t: '„Keine Verbindung zum Empfang“ erscheint', was: 'Beim Öffnen oder beim Speichern steht dieser Satz.', heisst: 'Der Browser erreicht den Server des Empfangs nicht: Internet weg, Server nicht gestartet, oder es läuft an dieser Adresse etwas anderes als das Empfang.', tun: 'Oben in dieser Prüfung die Punkte „Internet-Verbindung“ und „Der Server des Empfangs antwortet“ ansehen. Lokal: den Server des Empfangs starten.', robert: 'api() in studio.js bekommt vom fetch keine Antwort. Lokal: lsof -nP -iTCP:8925 -sTCP:LISTEN zeigt, wer den Port hat; läuft dort serve.py, beenden und python3 studio.py 8925 starten.' },
+  's-start': { t: 'Server des Empfangs starten (lokal)', was: 'So wird das Empfang auf dem Rechner gestartet.', heisst: 'Ohne laufenden Server gibt es auf dem Rechner weder Seite noch Empfang.', tun: 'Terminal öffnen, in den Projektordner wechseln, python3 studio.py 8925 eingeben. Die Antwort nennt drei Adressen: Empfang, Seite, Prüfung.', robert: 'cd "~/Desktop/Website-Projekte/Familie Maeder" && python3 studio.py 8925. Im Hintergrund: (nohup python3 studio.py 8925 >/dev/null 2>&1 &). Beim Haus später: eigener kleiner Server, Start beim Hochfahren.' },
+  's-port': { t: 'Lokal: „Port ist schon belegt“ beim Start', was: 'Der Server bricht beim Start mit diesem Satz ab.', heisst: 'Unter dieser Nummer läuft schon ein Server (oft der einfache Dateiserver serve.py oder ein zweites Empfang).', tun: 'Den alten Server beenden oder das Empfang mit einer anderen Nummer starten, zum Beispiel 8917.', robert: 'lsof -nP -iTCP:8925 -sTCP:LISTEN → kill <PID>. Seit Fassung 2026-10-09 c nimmt studio.py erst den Port und baut dann, vorher baute es eine halbe Minute und starb danach.' },
+  's-anmelden': { t: '„Bitte anmelden“ kommt immer wieder', was: 'Nach dem Anmelden springt das Empfang gleich wieder zur Anmeldung, oder jedes Speichern verlangt die Anmeldung.', heisst: 'Der Browser nimmt das Anmelde-Cookie nicht an (privates Fenster, Cookies blockiert), die Sitzung ist nach zwölf Stunden abgelaufen, oder der Server wurde neu gestartet und kennt die Sitzung nicht mehr.', tun: 'Cookies für diese Adresse erlauben, kein privates Fenster, einmal neu anmelden.', robert: 'Keks fm_studio HttpOnly SameSite=Strict, 12 h (DAUER). Sitzungen liegen in sitzungen.json und überleben einen Neustart, solange die Datei lesbar ist. Empfang und Seite müssen unter derselben Adresse laufen, sonst gilt der Keks nicht.' },
+  's-passwort': { t: 'Passwort vergessen', was: 'Die Familie kommt nicht mehr ins Empfang.', heisst: 'Das Passwort ist nur als Prüfsumme gespeichert, niemand kann es nachsehen.', tun: 'Robert Bescheid sagen. Er legt die Passwort-Datei beiseite; beim nächsten Öffnen legt die Familie ein neues Passwort fest. Entwürfe und Verlauf bleiben erhalten.', robert: 'mv inhalt/zugang.json inhalt/zugang.json.alt → Tor zeigt „Passwort festlegen“. Sitzungen leeren: inhalt/sitzungen.json löschen.' },
+  's-gesperrt': { t: '„Zu viele Versuche“ beim Anmelden', was: 'Nach mehreren falschen Passwörtern nimmt das Empfang 30 Sekunden lang keines mehr an.', heisst: 'Schutz gegen Raten. Die Sperre gilt für alle, die sich gerade anmelden wollen.', tun: 'Eine halbe Minute warten. Oder hier „Sperre aufheben“ (nur angemeldet).', robert: 'FEHL in studio.py: 5 Fehlversuche → 30 s. Reparatur sperre-aufheben.' },
+  's-langsam': { t: 'Speichern oder Veröffentlichen dauert lange', was: 'Nach „Speichern“ vergehen mehrere Sekunden, bevor die Quittung kommt.', heisst: 'Jedes Speichern baut die ganze Website neu (etwa eine halbe Sekunde) und rechnet den Vergleich. Online in der Probe-Fassung kommt die Zeit dazu, die der Server zum Aufwachen braucht (bis zu einigen Sekunden). Veröffentlichen baut dreimal.', tun: 'Normal sind bis zu drei Sekunden lokal und bis zu zehn online. Dauert es länger: „Noch einmal prüfen“ und den Punkt „Das Empfang ist nicht blockiert“ ansehen.', robert: 'GEBAUT["dauer"] steht beim Punkt „Der Server“. Lokal 0,4 s je Bau; bau_entwurf + 2× signaturen() je Änderung. Vercel: Kaltstart + copytree(START).' },
+  's-alt': { t: 'Die Website zeigt noch den alten Stand', was: 'Veröffentlicht, aber im Browser steht noch das Alte.', heisst: 'Der Browser zeigt eine gespeicherte Fassung. Seiten werden bei jedem Aufruf neu geholt, Bilder und Filme bis zu zehn Minuten lang aus dem Zwischenspeicher, getauschte Bilder bekommen aber eine neue Adresse.', tun: 'Seite neu laden, am Rechner mit gedrückter Umschalttaste. Bilder: bis zu zehn Minuten warten oder ein privates Fenster öffnen.', robert: 'Lokal: Cache-Control no-store, sofort sichtbar. Online: vercel.json max-age=600 für Bilder ohne ?v=, Seiten ohne Cache-Header (Vercel liefert frisch nach jedem Deploy). Empfang online ist nur die Probe-Fassung: dort zeigt /live/… den eigenen Stand, die echte Website ändert sich nicht.' },
+  's-nicht-sichtbar': { t: 'Gespeichert, aber auf der Website nicht zu sehen', was: 'Eine Änderung ist gespeichert und fehlt trotzdem auf der Website.', heisst: 'Speichern legt sie nur im Entwurf ab. Auf die Website kommt sie erst mit „Veröffentlichen“.', tun: 'Unten in der Leiste „Veröffentlichen“ drücken. Die Liste zeigt, was live geht.', robert: 'entwurf.json ≠ stand.json. veroeffentlichen() schreibt stand.json und baut LIVE.' },
+  's-klick': { t: 'In „Seiten & Texte“ lässt sich nichts anklicken', was: 'Die Seite erscheint, aber beim Überfahren wird nichts gold umrandet.', heisst: 'Der Entwurf trägt keine Kennzeichen, oder der Browser lässt das Empfang nicht in das Fenster hineingreifen.', tun: 'Oben den Punkt „Die Seite lässt sich im Empfang öffnen“ ansehen. Erweiterungen, die Inhalte blocken, ausschalten; anderen Browser versuchen.', robert: 'iframe same-origin? data-e im Entwurf? werkBereit() in studio.js hängt an fr.contentDocument. Ein Element ohne eigenen Text (nur Symbol) ist bewusst nicht wählbar (_stellen in inhalt.py).' },
+  's-bild': { t: 'Foto hochladen klappt nicht', was: 'Beim Hochladen kommt eine Meldung, oder es passiert nichts.', heisst: 'Erlaubt sind JPG, PNG und WebP bis 30 MB. Andere Formate (HEIC vom iPhone, PDF, TIFF) nimmt das Empfang nicht. In der Probe-Fassung ist Hochladen abgeschaltet, dort geht nur „Aus den Fotos der Seite wählen“. Rot bei „Das Bildwerkzeug“ heisst, der Server kann nicht umrechnen.', tun: 'Foto als JPG speichern (am iPhone: Einstellungen → Kamera → Formate → „Maximale Kompatibilität“, oder in Fotos exportieren). Kleiner als 30 MB.', robert: 'bild_annehmen(): PIL.Image.open, EXIF-Drehung, 30 MB Grenze. Antwort 422 mit Satz. HEIC braucht pillow-heif (nicht installiert, bewusst).' },
+  's-baut-nicht': { t: '„Der Entwurf lässt sich gerade nicht bauen“ in der Übersicht', was: 'Oben in der Übersicht steht dieser Satz mit einer Begründung.', heisst: 'Der Bau der Seite scheitert. Bis er wieder gelingt, lässt sich nichts speichern.', tun: 'Hier „Entwurf und Vergleich neu bauen“. Bleibt es, den Bericht an Robert.', robert: 'Siehe Punkt „Bau von Entwurf und Vergleich“. Der Satz nach dem Doppelpunkt ist die letzte stderr-Zeile von bau.py.' },
+  's-stelle-weg': { t: '„Diese Stelle gibt es auf der Seite nicht mehr“', was: 'Unter „Änderungen“ steht dieser Hinweis an einem geänderten Text.', heisst: 'Die Seite wurde an dieser Stelle umgebaut (neuer Abschnitt, anderer Satz), der geänderte Text findet seine Stelle nicht mehr und wirkt nicht.', tun: 'Die Änderung zurücknehmen und den Text in „Seiten & Texte“ an der neuen Stelle noch einmal eintragen.', robert: 'verwaist in _studio.json. Reparatur verwaiste-weg nimmt alle auf einmal heraus.' },
+  's-zwei-fenster': { t: 'In zwei Fenstern oder von zwei Personen gleichzeitig arbeiten', was: 'Zwei Browser oder zwei Personen ändern gleichzeitig im Empfang.', heisst: 'Beide arbeiten am selben Entwurf. Wer zuletzt speichert, gewinnt an dieser Stelle; das andere Fenster zeigt den Stand erst nach einem Neuladen. Es geht nichts verloren, aber es kann verwirren.', tun: 'Nacheinander arbeiten oder vor jedem Speichern einmal neu laden.', robert: 'Keine Sperre je Stelle, nur SCHLOSS je Anfrage. Letzter Schreiber gewinnt (schreib(F_ENTWURF, e)).' },
+  's-probe-verloren': { t: 'Probe-Fassung: Änderungen sind weg', was: 'In der Probe-Fassung fehlen die Änderungen von neulich.', heisst: 'Die Probe-Fassung bewahrt den Stand nur im Browser (Cookies, 14 Tage). Ein anderer Browser, ein anderes Gerät, ein privates Fenster oder gelöschte Cookies zeigen wieder den Ausgangsstand. Das ist gewollt: Die echte Website verändert die Probe nie.', tun: 'Im selben Browser bleiben. Fürs echte Arbeiten später das echte Empfang mit Passwort.', robert: 'probe.py: fm_z… Kekse, TAGE=14. Serverseitig nur Zwischenspeicher je Maschine (/tmp/fm/g, HOECHSTENS=6).' },
+  's-probe-gross': { t: 'Probe-Fassung: nach vielen Änderungen geht nichts mehr', was: 'In der Probe-Fassung kommen nach vielen Speicherungen und Veröffentlichungen nur noch Fehler.', heisst: 'Der ganze Probe-Stand reist in Cookies mit. Werden sie zu gross, nimmt der Server die Anfrage nicht mehr an.', tun: 'Oben bei „Cookies“ „Probe zurücksetzen“ drücken. Der Probe-Stand beginnt wieder beim Stand der Seite.', robert: 'packe() kürzt den Verlauf bis 8×3600 Zeichen. Grenze der Kopfzeilen bei Vercel rund 16 KB; die Prüfung warnt ab 12 KB. Zurücksetzen: POST reparieren {was:"zuruecksetzen"} löscht Kekse und Gast-Ordner.' },
+  's-handy': { t: 'Am Handy ist das Empfang eng', was: 'Listen und der Seiten-Editor sind am Handy unbequem.', heisst: 'Das Empfang ist für Rechner und Tablet gebaut; am Handy geht alles, aber mit Scrollen.', tun: 'Häuser, Angaben und der Hinweis gehen gut am Handy. Für „Seiten & Texte“ und den Vergleich den Rechner nehmen.', robert: 'Umbruch bei 860 px (studio.css), Prüfung warnt unter 360 px.' },
+  's-link': { t: 'Ein Link wird abgelehnt', was: 'Beim Speichern eines Links kommt „muss mit https:// beginnen“.', heisst: 'Links müssen mit https:// (oder mailto:) beginnen und dürfen keine Leer- oder Anführungszeichen enthalten. Seiten der eigenen Website heissen zum Beispiel haus.html.', tun: 'Adresse vollständig aus der Adresszeile des Browsers kopieren.', robert: 'fakt_setzen (link, pdf, mail), liste_pruef (art link), hinweis link: fullmatch-Muster in studio.py.' },
+  's-hinweis': { t: 'Das Hinweis-Band erscheint nicht', was: 'Hinweis für Gäste gespeichert und veröffentlicht, aber nicht zu sehen.', heisst: 'Der Schalter ist aus, der Text ist leer, oder das Datum liegt ausserhalb von „Zeigen ab“ und „Zeigen bis“. Gäste, die es geschlossen haben, sehen es erst beim nächsten Seitenaufruf wieder.', tun: 'Unter „Hinweis für Gäste“ Schalter, Text und Zeitraum prüfen, speichern, veröffentlichen.', robert: 'inhalt.hinweis(): an + text + Zeitraum (Serverdatum beim Bau, dazu Skript im Band mit dem Datum des Gasts).' },
+  's-neustart': { t: 'Nach einem Neustart des Rechners', was: 'Der Rechner wurde neu gestartet, Empfang und Seite sind nicht mehr erreichbar.', heisst: 'Der Server des Empfangs läuft nicht von selbst wieder an.', tun: 'Server des Empfangs starten (siehe „Server des Empfangs starten“). Entwürfe, Verlauf und Passwort sind gespeichert und wieder da.', robert: 'Beim Haus später ein LaunchAgent / systemd-Dienst für python3 studio.py. Daten in inhalt/ überleben.' },
+  's-unerwartet': { t: '„Im Empfang ist etwas schiefgegangen“', was: 'Diese Meldung kommt bei einem Speichern oder Öffnen.', heisst: 'Ein Fehler, den das Empfang nicht vorgesehen hat. Er ist im Fehlerprotokoll des Servers aufgezeichnet.', tun: '„Noch einmal prüfen“ und den Punkt „Fehlerprotokoll des Servers“ lesen. Bericht kopieren, Robert schicken.', robert: 'melde_fehler() → DATEN/fehler.log mit Stapel. Antwort 500 statt stummem Verbindungsabbruch (seit Fassung 2026-10-09 c).' }
+};
+var REIHE_C = ['c-netz', 'c-status', 'c-browser', 'c-kekse', 'c-speicher', 'c-fehler', 'c-studiojs', 'c-studiocss', 'c-assets', 'c-schrift', 'c-stand', 'c-entwurf', 'c-vorher', 'c-rahmen', 'c-live', 'c-zeit', 'c-breite', 'c-server'];
+var REP_TEXT = { 'neu-bauen': 'Entwurf und Vergleich neu bauen', 'live-neu': 'Veröffentlichte Seite neu bauen', 'stand-zurueck': 'Stand aus dem Verlauf zurückholen', 'entwurf-vom-stand': 'Entwurf aus dem Stand neu anlegen', 'nebendateien-neu': 'Aufräumen', 'sperre-aufheben': 'Sperre aufheben', 'zugang-rechte': 'Dateirechte setzen',
+  'verwaiste-weg': 'Wirkungslose Texte entfernen', 'bilder-aufraeumen': 'Bildverweise aufräumen', 'haeuser-standard': 'Häuser auf den Stand der Seite setzen', 'verlauf-aufraeumen': 'Verlauf aufräumen', 'fehler-leeren': 'Protokoll leeren', 'zuruecksetzen': 'Probe zurücksetzen' };
+
+/* ---------------------------------------------------------------- Werkzeug */
+function sag(text, fehler) {
+  var d = document.createElement('div'); d.textContent = text; if (fehler) d.className = 'f';
+  $('#meldung').appendChild(d); setTimeout(function () { d.remove(); }, fehler ? 6000 : 3200);
+}
+function holen(weg, ms, opt) {
+  var ac = 'AbortController' in window ? new AbortController() : null, t = ac && setTimeout(function () { ac.abort(); }, ms || 10000);
+  var o = opt || {}; if (ac) o.signal = ac.signal; o.cache = 'no-store'; o.credentials = 'same-origin';
+  return fetch(weg, o).then(function (r) { clearTimeout(t); return r; }, function (e) { clearTimeout(t); throw (e && e.name === 'AbortError') ? new Error('keine Antwort nach ' + Math.round((ms || 10000) / 1000) + ' s') : e; });
+}
+function zeile(code, stand, text, mehr) {
+  var l = LEX[code] || { t: code, was: '', heisst: '', tun: '', robert: '' }, m = mehr || {};
+  var rep = m.reparatur && REP_TEXT[m.reparatur] ? '<button class="kn kn--klein kn--linie" type="button" data-rep="' + h(m.reparatur) + '">' + h(REP_TEXT[m.reparatur]) + '</button>' : '';
+  var akt = (m.aktionen || []).map(function (a) { return '<button class="kn kn--klein kn--linie" type="button" data-akt="' + h(a[0]) + '">' + h(a[1]) + '</button>'; }).join('');
+  var liste = m.liste && m.liste.length ? '<div class="pt__l">' + h(m.liste.slice(0, 8).join('\n')) + (m.liste.length > 8 ? '\n… und ' + (m.liste.length - 8) + ' weitere' : '') + '</div>' : '';
+  var erkl = stand === 'ok' || stand === 'lauf' ? '' : '<div class="pt__m"><p><i>Was das heisst</i>' + h(l.heisst) + '</p><p><i>Was Sie tun können</i>' + h(l.tun) + '</p><p><i>Für Robert</i>' + h(l.robert) + '</p></div>';
+  return '<div class="pt ' + stand + '" data-code="' + h(code) + '"><span class="pt__z">' + SVG[stand] + '</span><div><b>' + h(l.t) + '</b><div class="pt__t">' + h(text) + '</div>' + liste + erkl + '</div><div class="pt__r">' + rep + akt + '</div></div>';
+}
+function setze(wo, code, stand, text, mehr) {
+  var liste = $(wo), alt = liste.querySelector('[data-code="' + code + '"]'), html = zeile(code, stand, text, mehr);
+  if (alt) { alt.outerHTML = html; } else { liste.insertAdjacentHTML('beforeend', html); }
+  var e = ERG[wo === '#c-liste' ? 'c' : 's'], i = -1;
+  e.forEach(function (x, k) { if (x.code === code) i = k; });
+  var eintrag = { code: code, stand: stand, text: text, liste: mehr && mehr.liste };
+  if (i >= 0) e[i] = eintrag; else e.push(eintrag);
+  ampel();
+}
+function ampel() {
+  var alle = ERG.c.concat(ERG.s), fehl = alle.filter(function (x) { return x.stand === 'fehl'; }).length, warn = alle.filter(function (x) { return x.stand === 'warn'; }).length, a = $('#ampel');
+  $('#z-c').textContent = String(ERG.c.length).padStart(2, '0'); $('#z-s').textContent = String(ERG.s.length).padStart(2, '0');
+  if (LAEUFT) return;
+  a.className = 'blatt ampel ' + (fehl ? 'fehl' : warn ? 'warn' : 'ok');
+  $('.ampel__l svg', a).outerHTML = SVG[fehl ? 'fehl' : warn ? 'warn' : 'ok'];
+  $('#a-t').innerHTML = fehl ? h(fehl) + (fehl === 1 ? ' Punkt ist <em>rot.</em>' : ' Punkte sind <em>rot.</em>') : warn ? h(warn) + (warn === 1 ? ' Punkt verdient <em>einen Blick.</em>' : ' Punkte verdienen <em>einen Blick.</em>') : 'Alles in <em>Ordnung.</em>';
+  $('#a-p').textContent = fehl ? 'Rote Punkte stehen mit Erklärung und, wo es geht, mit einem Knopf zum Beheben unten in der Liste.' : warn ? 'Gelb ist kein Hindernis. Die Erklärung steht am Punkt.' : alle.length + ' Punkte geprüft, nichts zu tun. Das Empfang ist bereit.';
+}
+function bericht() {
+  var z = function (x) { return (x.stand === 'ok' ? '[ok] ' : x.stand === 'warn' ? '[!]  ' : '[X]  ') + (LEX[x.code] ? LEX[x.code].t : x.code) + ': ' + x.text + (x.liste && x.liste.length ? '\n      ' + x.liste.slice(0, 8).join('\n      ') : ''); };
+  return ['Prüfung Empfang Familie Maeder', new Date().toLocaleString('de-CH'), location.href, 'Browser: ' + navigator.userAgent, 'Fenster: ' + innerWidth + '×' + innerHeight, (SERVER ? 'Server-Fassung: ' + SERVER.fassung + (SERVER.probe ? ' (Probe)' : '') : 'Server: keine Prüfliste'), '', 'Verbindung und Browser'].concat(ERG.c.map(z), ['', 'Server, Daten und Bau'], ERG.s.map(z)).join('\n');
+}
+function kopiere(text) {
+  var fertig = function () { sag('Der Bericht ist kopiert. Einfügen in eine Nachricht an Robert.'); };
+  if (navigator.clipboard && navigator.clipboard.writeText) return navigator.clipboard.writeText(text).then(fertig, function () { kopiere2(text); fertig(); });
+  kopiere2(text); fertig();
+}
+function kopiere2(text) { var t = document.createElement('textarea'); t.value = text; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); } catch (e) {} t.remove(); }
+
+/* ---------------------------------------------------------------- Prüfung im Browser */
+var CHECKS = {
+  'c-netz': function () { return navigator.onLine === false ? ['fehl', 'Der Browser meldet: offline'] : ['ok', 'Der Browser ist online']; },
+  'c-status': function () {
+    return holen(API + 'status', 12000).then(function (r) {
+      var ct = r.headers.get('content-type') || '';
+      if (!r.ok) return ['fehl', 'Antwort ' + r.status + ' statt 200. ' + (r.status === 404 ? 'Unter dieser Adresse läuft kein Server des Empfangs, nur Dateien werden geliefert.' : 'Der Server ist gestört.')];
+      if (ct.indexOf('json') < 0) return ['fehl', 'Es antwortet ein Server, aber nicht das Empfang (liefert ' + (ct.split(';')[0] || 'unbekannt') + ' statt Daten). Lokal heisst das meist: Es läuft serve.py statt studio.py.'];
+      return r.json().then(function (j) {
+        ST = j; PROBE = !!j.probe; ANG = !!j.angemeldet;
+        return ['ok', (PROBE ? 'Probe-Fassung' : 'Echtes Empfang') + (j.fassung ? ', Fassung ' + j.fassung : '') + ' · ' + (ANG ? 'angemeldet' : j.eingerichtet ? 'nicht angemeldet' : 'noch kein Passwort festgelegt') + (j.offen ? ' · ohne Passwort offen' : '')];
+      });
+    }, function (e) { return ['fehl', 'Keine Antwort vom Server (' + e.message + '). Entweder läuft er nicht, oder die Adresse stimmt nicht.']; });
+  },
+  'c-browser': function () {
+    var fehlt = [];
+    if (!('fetch' in window)) fehlt.push('fetch'); if (!('AbortController' in window)) fehlt.push('AbortController'); if (!('ResizeObserver' in window)) fehlt.push('ResizeObserver'); if (!window.Intl) fehlt.push('Intl');
+    try { new Function('var a={};return a?.b ?? 1'); } catch (e) { fehlt.push('moderne Schreibweise (?. und ??)'); }
+    return fehlt.length ? ['fehl', 'Dem Browser fehlt: ' + fehlt.join(', ') + ' · ' + navigator.userAgent.slice(0, 80)] : ['ok', 'Alles da, was das Empfang braucht · ' + (navigator.userAgent.match(/(Safari|Chrome|Firefox|Edg)\/[\d.]+/g) || ['Browser unbekannt']).join(' ')];
+  },
+  'c-kekse': function () {
+    if (!navigator.cookieEnabled) return ['fehl', 'Cookies sind im Browser abgeschaltet: die Anmeldung kann nicht gehalten werden'];
+    if (PROBE) {
+      var n = document.cookie.length, kb = (n / 1024).toFixed(1);
+      var akt = n > 0 ? [['zuruecksetzen', 'Probe zurücksetzen']] : [];
+      if (n > 15500) return ['fehl', 'Ihr Probe-Stand in den Cookies ist ' + kb + ' KB gross. Ab etwa 16 KB nimmt der Server keine Anfragen mehr an.', { aktionen: akt }];
+      if (n > 12000) return ['warn', 'Ihr Probe-Stand in den Cookies ist ' + kb + ' KB gross. Bei etwa 16 KB ist Schluss, dann hilft nur Zurücksetzen.', { aktionen: akt }];
+      return ['ok', 'Cookies erlaubt · Probe-Stand ' + kb + ' KB in den Cookies (Grenze etwa 16 KB)', { aktionen: akt }];
+    }
+    return ['ok', 'Cookies erlaubt' + (ANG ? ', die Anmeldung wird gehalten' : '')];
+  },
+  'c-speicher': function () { try { localStorage.setItem('fm_probe', '1'); localStorage.removeItem('fm_probe'); return ['ok', 'Der Browser darf sich Kleinigkeiten merken']; } catch (e) { return ['warn', 'Der Browser-Speicher ist gesperrt (privates Fenster oder blockierte Website-Daten)']; } },
+  'c-fehler': function () {
+    var l = []; try { l = JSON.parse(localStorage.getItem('fm_fehler') || '[]'); } catch (e) {}
+    if (!l.length) return ['ok', 'Keine Fehler in der Oberfläche aufgezeichnet'];
+    return ['warn', l.length + (l.length === 1 ? ' Fehler' : ' Fehler') + ' aus den letzten Sitzungen, der letzte ' + new Date(l[l.length - 1].z).toLocaleString('de-CH'), { liste: l.slice(-6).map(function (x) { return x.z.slice(0, 16).replace('T', ' ') + ' ' + x.t; }), aktionen: [['fehler-leeren-browser', 'Liste leeren']] }];
+  },
+  'c-studiojs': function () {
+    return holen('studio.js', 15000).then(function (r) {
+      if (!r.ok) return ['fehl', 'studio.js kommt nicht (Antwort ' + r.status + ')'];
+      return r.text().then(function (t) {
+        if (t.indexOf('/studio/api/') < 0) return ['fehl', 'Die Datei kommt, ist aber nicht das Empfang (' + (t.length / 1024).toFixed(0) + ' KB, ohne den erwarteten Inhalt)'];
+        try { new Function(t); } catch (e) { return ['fehl', 'Die Datei lässt sich nicht lesen: ' + e.message]; }
+        return ['ok', 'Vollständig und lesbar, ' + (t.length / 1024).toFixed(0) + ' KB'];
+      });
+    }, function (e) { return ['fehl', 'studio.js kommt nicht: ' + e.message]; });
+  },
+  'c-studiocss': function () {
+    return holen('studio.css', 15000).then(function (r) { if (!r.ok) return ['fehl', 'studio.css kommt nicht (Antwort ' + r.status + ')']; return r.text().then(function (t) { return t.indexOf(':root') >= 0 ? ['ok', 'Da, ' + (t.length / 1024).toFixed(0) + ' KB'] : ['fehl', 'Die Datei kommt, enthält aber nicht die Gestaltung des Empfangs']; }); }, function (e) { return ['fehl', 'studio.css kommt nicht: ' + e.message]; });
+  },
+  'c-assets': function () {
+    var wege = ['/assets/css/main.css', '/assets/logo/familie-maeder.svg'];
+    return Promise.all(wege.map(function (w) { return holen(w, 15000).then(function (r) { return r.ok ? '' : w + ' (' + r.status + ')'; }, function (e) { return w + ' (' + e.message + ')'; }); })).then(function (f) { f = f.filter(Boolean); return f.length ? ['fehl', 'Nicht erreichbar: ' + f.join(', ')] : ['ok', 'Stylesheet und Zeichen der Website erreichbar']; });
+  },
+  'c-schrift': function () { return holen('/assets/fonts/librecaslon-700.woff2', 15000, { method: 'HEAD' }).then(function (r) { return r.ok ? ['ok', 'Libre Caslon ist da'] : ['warn', 'Die Schriftdatei fehlt (Antwort ' + r.status + '), das Empfang nimmt eine Ersatzschrift']; }, function (e) { return ['warn', 'Schrift nicht erreichbar: ' + e.message]; }); },
+  'c-stand': function () {
+    if (!ST) return ['warn', 'Nicht geprüft, weil der Server nicht antwortet'];
+    if (!ANG) return ['warn', 'Nicht geprüft: Sie sind nicht angemeldet. Nach der Anmeldung noch einmal prüfen.'];
+    var t0 = Date.now();
+    return holen(API + 'stand', 60000).then(function (r) {
+      if (!r.ok) return r.json().catch(function () { return {}; }).then(function (j) { return ['fehl', 'Antwort ' + r.status + (j.fehler ? ': ' + j.fehler : '')]; });
+      return r.json().then(function (j) {
+        var s = (Date.now() - t0) / 1000;
+        if (j.fehler) return ['fehl', 'Der Überblick kommt, aber der Entwurf baut nicht: ' + j.fehler];
+        return [s > 15 ? 'warn' : 'ok', (j.bilder || []).length + ' Bilder, ' + Object.keys(j.felder || {}).length + ' Angaben, ' + Object.keys(j.listen || {}).length + ' Listen, ' + (j.aenderungen || []).length + ' Änderungen im Entwurf · in ' + s.toFixed(1) + ' s' + (s > 15 ? ' (langsam)' : '')];
+      });
+    }, function (e) { return ['fehl', 'Der Überblick kommt nicht: ' + e.message]; });
+  },
+  'c-entwurf': function () { return seiteHolen('/entwurf/index.html', true); },
+  'c-vorher': function () { return seiteHolen('/vorher/index.html', true); },
+  'c-rahmen': function () {
+    if (!ST) return ['warn', 'Nicht geprüft, weil der Server nicht antwortet'];
+    if (!ANG) return ['warn', 'Nicht geprüft: nicht angemeldet'];
+    return new Promise(function (ok) {
+      var fr = document.createElement('iframe'); fr.style.cssText = 'position:fixed;left:-2000px;top:0;width:900px;height:600px;opacity:0;pointer-events:none'; fr.setAttribute('aria-hidden', 'true');
+      var fertig = false, t = setTimeout(function () { raus(['fehl', 'Die Seite öffnet sich im Empfang nicht (keine Antwort nach 30 s)']); }, 30000);
+      function raus(x) { if (fertig) return; fertig = true; clearTimeout(t); fr.remove(); ok(x); }
+      fr.onload = function () {
+        try {
+          var d = fr.contentDocument; if (!d || !d.body) return raus(['fehl', 'Das Empfang darf nicht in die Seite hineingreifen (fremde Herkunft)']);
+          if (d.location && d.location.href === 'about:blank') return;
+          var n = d.querySelectorAll('[data-e]').length, b = d.querySelectorAll('img[data-b]').length;
+          if (!n) return raus(['fehl', 'Die Seite öffnet sich, trägt aber keine Kennzeichen: nichts wäre anklickbar']);
+          raus(['ok', 'Die Startseite öffnet sich im Empfang: ' + n + ' anklickbare Texte, ' + b + ' Bilder']);
+        } catch (e) { raus(['fehl', 'Das Empfang darf nicht in die Seite hineingreifen: ' + e.message]); }
+      };
+      fr.onerror = function () { raus(['fehl', 'Die Seite lässt sich nicht laden']); };
+      fr.src = '/entwurf/index.html?nomotion'; document.body.appendChild(fr);
+    });
+  },
+  'c-live': function () {
+    return holen('/index.html', 20000).then(function (r) {
+      if (r.status === 307 || r.status === 302) return ['ok', 'Die Website verweist weiter (' + r.status + ')'];
+      if (!r.ok) return ['fehl', 'Die Website antwortet mit ' + r.status];
+      return r.text().then(function (t) {
+        var marken = /[-]/.test(t), attr = t.indexOf('data-e="') >= 0;
+        if (marken || attr) return ['fehl', 'Die veröffentlichte Startseite enthält Kennzeichen des Entwurfs (' + (marken ? 'unsichtbare Zeichen' : '') + (marken && attr ? ' und ' : '') + (attr ? 'Hilfsattribute' : '') + ')'];
+        return ['ok', 'Die Startseite antwortet, ' + (t.length / 1024).toFixed(0) + ' KB, ohne Kennzeichen'];
+      });
+    }, function (e) { return ['fehl', 'Die Website antwortet nicht: ' + e.message]; });
+  },
+  'c-zeit': function () {
+    if (!SERVER || !SERVER.zeit) return ['ok', 'Nicht vergleichbar (keine Server-Zeit)'];
+    var d = Math.abs(Date.now() - new Date(SERVER.zeit).getTime()) / 60000;
+    return isNaN(d) ? ['ok', 'Nicht vergleichbar'] : d > 5 ? ['warn', 'Browser und Server gehen ' + Math.round(d) + ' Minuten auseinander'] : ['ok', 'Browser und Server gehen gleich (Abweichung unter ' + Math.max(1, Math.round(d)) + ' Min.)'];
+  },
+  'c-breite': function () { return innerWidth < 360 ? ['warn', 'Das Fenster ist nur ' + innerWidth + ' Pixel breit'] : ['ok', innerWidth + ' × ' + innerHeight + ' Pixel']; },
+  'c-server': function () {
+    if (!ST) return ['warn', 'Nicht geprüft, weil der Server nicht antwortet'];
+    return holen(API + 'pruefung', 90000).then(function (r) {
+      if (!r.ok) return r.json().catch(function () { return {}; }).then(function (j) { return ['fehl', 'Antwort ' + r.status + (j.fehler ? ': ' + j.fehler : '')]; });
+      return r.json().then(function (j) { SERVER = j; serverZeigen(j); return ['ok', j.punkte.length + ' Punkte des Servers geprüft in ' + j.dauer + ' s']; });
+    }, function (e) { return ['fehl', 'Die Prüfliste des Servers kommt nicht: ' + e.message]; });
+  }
+};
+function seiteHolen(weg, marken) {
+  if (!ST) return Promise.resolve(['warn', 'Nicht geprüft, weil der Server nicht antwortet']);
+  if (!ANG) return Promise.resolve(['warn', 'Nicht geprüft: nicht angemeldet']);
+  return holen(weg, 60000).then(function (r) {
+    if (r.status === 403) return ['warn', 'Der Server verlangt eine Anmeldung (403)'];
+    if (!r.ok) return ['fehl', 'Antwort ' + r.status];
+    return r.text().then(function (t) { if (marken && t.indexOf('data-e="') < 0) return ['fehl', 'Die Seite kommt, trägt aber keine Kennzeichen für das Empfang']; return ['ok', 'Kommt, ' + (t.length / 1024).toFixed(0) + ' KB, mit ' + (t.match(/data-e="/g) || []).length + ' gekennzeichneten Stellen']; });
+  }, function (e) { return ['fehl', 'Kommt nicht: ' + e.message]; });
+}
+function serverZeigen(j) {
+  $('#s-liste').innerHTML = ''; ERG.s = [];
+  j.punkte.forEach(function (p) { setze('#s-liste', p.code, p.stand, p.text, { liste: p.liste, reparatur: p.reparatur }); });
+  $('#f-r').textContent = 'Server-Fassung ' + j.fassung + (j.probe ? ' · Probe-Fassung' : '') + ' · ' + new Date(j.zeit).toLocaleString('de-CH');
+}
+function lauf() {
+  if (LAEUFT) return; LAEUFT = true;
+  ERG = { c: [], s: [] }; ST = null; SERVER = null; PROBE = false; ANG = false;
+  $('#c-liste').innerHTML = ''; $('#s-liste').innerHTML = zeile('server', 'lauf', 'Warten auf die Prüfliste des Servers …');
+  var a = $('#ampel'); a.className = 'blatt ampel lauf'; $('.ampel__l svg', a).outerHTML = SVG.lauf; $('#a-t').innerHTML = 'Wird <em>geprüft …</em>'; $('#a-p').textContent = 'Einen Augenblick. Jeder Punkt erscheint, sobald er geprüft ist.';
+  $('#nochmal').disabled = true; $('#bericht').disabled = true;
+  var kette = Promise.resolve();
+  REIHE_C.forEach(function (code) {
+    kette = kette.then(function () {
+      setze('#c-liste', code, 'lauf', 'Wird geprüft …');
+      return Promise.resolve().then(function () { return CHECKS[code](); }).then(function (x) { setze('#c-liste', code, x[0], x[1], x[2]); }, function (e) { setze('#c-liste', code, 'fehl', 'Die Prüfung selbst ist hier gestolpert: ' + (e && e.message || e)); });
+    });
+  });
+  kette.then(function () {
+    if (!SERVER) { $('#s-liste').innerHTML = zeile('c-server', 'fehl', 'Keine Prüfliste vom Server. Die Punkte oben sagen, warum.'); }
+    LAEUFT = false; ampel(); $('#nochmal').disabled = false; $('#bericht').disabled = false;
+    $('#f-l').textContent = 'Geprüft ' + new Date().toLocaleString('de-CH') + ' · ' + (ERG.c.length + ERG.s.length) + ' Punkte';
+  });
+}
+function reparieren(was, knopf) {
+  if (ST && !ANG && !PROBE) return sag('Dafür müssen Sie im Empfang angemeldet sein.', true);
+  knopf.disabled = true; var alt = knopf.textContent; knopf.textContent = 'Läuft …'; $('#nochmal').disabled = true;
+  holen(API + 'reparieren', 120000, { method: 'POST', headers: { 'X-Empfang': '1', 'Content-Type': 'application/json' }, body: JSON.stringify({ was: was }) }).then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { if (!r.ok) throw new Error(j.fehler || 'Antwort ' + r.status); return j; }); })
+    .then(function (j) { sag(j.meldung || 'Erledigt.'); setTimeout(lauf, 600); }, function (e) { sag(e.message, true); knopf.disabled = false; knopf.textContent = alt; $('#nochmal').disabled = LAEUFT; });
+}
+document.addEventListener('click', function (ev) {
+  var r = ev.target.closest('[data-rep]'), a = ev.target.closest('[data-akt]');
+  if (r) return reparieren(r.dataset.rep, r);
+  if (a) {
+    if (a.dataset.akt === 'fehler-leeren-browser') { try { localStorage.removeItem('fm_fehler'); } catch (e) {} sag('Die Liste ist leer.'); setze('#c-liste', 'c-fehler', 'ok', 'Keine Fehler in der Oberfläche aufgezeichnet'); }
+    if (a.dataset.akt === 'zuruecksetzen') reparieren('zuruecksetzen', a);
+  }
+});
+$('#nochmal').addEventListener('click', lauf);
+$('#bericht').addEventListener('click', function () { kopiere(bericht()); });
+
+/* ---------------------------------------------------------------- Lexikon */
+function lexikon(filter) {
+  var f = (filter || '').trim().toLowerCase(), aus = [], n = 0;
+  var gruppen = [['Wenn etwas passiert', function (k) { return k.indexOf('s-') === 0; }], ['Verbindung und Browser', function (k) { return k.indexOf('c-') === 0; }], ['Server, Daten und Bau', function (k) { return k.indexOf('c-') !== 0 && k.indexOf('s-') !== 0; }]];
+  gruppen.forEach(function (g) {
+    var eintraege = Object.keys(LEX).filter(g[1]).filter(function (k) { var l = LEX[k]; return !f || (l.t + ' ' + l.was + ' ' + l.heisst + ' ' + l.tun + ' ' + l.robert).toLowerCase().indexOf(f) >= 0; });
+    if (!eintraege.length) return;
+    aus.push('<div class="le" style="border-top:0"><div style="padding:14px 20px 4px" class="mono leise">' + h(g[0]) + '</div></div>');
+    eintraege.forEach(function (k) {
+      var l = LEX[k]; n++;
+      aus.push('<details class="le"><summary><span><b>' + h(l.t) + '</b><small>' + h(l.was) + '</small></span><i>' + h(k) + '</i></summary><div class="le__k"><p><i>Was das heisst</i>' + h(l.heisst) + '</p><p><i>Was Sie tun können</i>' + h(l.tun) + '</p><p><i>Für Robert</i>' + h(l.robert) + '</p></div></details>');
+    });
+  });
+  $('#lex-liste').innerHTML = aus.join('') || '<p class="pt__t" style="padding:14px 20px">Nichts gefunden.</p>';
+  $('#z-l').textContent = String(n).padStart(2, '0');
+}
+$('#such').addEventListener('input', function () { lexikon(this.value); });
+lexikon('');
+fetch('/assets/logo/familie-maeder.svg', { cache: 'no-store' }).then(function (r) { return r.text(); }).then(function (s) { var m = s.match(/<svg[^>]*viewBox="([^"]+)"[\s\S]*?(<path[\s\S]*?)<\/svg>/); if (m) $('#zeichen').innerHTML = '<svg viewBox="' + m[1] + '">' + m[2] + '</svg>'; }).catch(function () {});
+lauf();
+})();
+</script>
+</body>
+</html>
